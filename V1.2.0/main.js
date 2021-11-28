@@ -11,7 +11,7 @@ for (let i = 1; i <= numeroIntegrantes; i++) {
         texto = `Familiar ${i}: ${nombre} <br>`;
     convivientes += texto + " ";
     } else {
-        alert ("Según recuerdo, no hay nombres que sean números, porfavor, recarga la página e intentalo nuevamente.")
+        alert ("Según recuerdo, no hay nombres que sean números, porfavor, intentalo nuevamente.")
         nombre= prompt ("Porfavor, ingrese el nombre de su familiar, recuerda escribir el tuyo también");
         texto = `Familiar ${i}: ${nombre} <br>`;
     convivientes += texto + " ";
