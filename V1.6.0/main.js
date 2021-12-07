@@ -45,19 +45,23 @@ let elegirLibro = () => {
 
 
 elegirLibro();
-/**
- * Descripción: Creamos un ciclo for in donde recorremos el objeto libros para seleccionar el libro que el usuario eligió, mostrandole el detalle del mismo y preguntandole si quiere comprarlo. Si elige que quiere comprarlo(SI) se interrumpe el ciclo while, si decide no comprarlo(NO), se le vuelve a mostrar la lista de libros para que seleccione otro libro, por lo tanto, el ciclo while continua hasta que el usuario decida comprar un libro.  
- */
+
 
 let comprarlo = "NO";
-
+/**
+ * Descripción: Se creó la función elegidito para obtener a través del find el libro que el usuario seleccionó.
+ * @param {Libro} elegido: Variable donde se almacena el libro elegido.
+ */
 let elegido;
 let elegidito = () => {
     elegido = libros.find(clave=> libros.indexOf(clave) === parseInt (libroElegido) -1)
     return elegido;
 };
-elegidito ();
+elegidito();
 
+/**
+ * Descripción: Creamos un ciclo while donde le seguimos preguntando al usuario si quiere comprar un libro hasta que nos diga que si (si, hay que insistir aveces para obtener ventas) Si elige que quiere comprarlo(SI) se interrumpe el ciclo while, si decide no comprarlo(NO), se le vuelve a mostrar la lista de libros para que seleccione otro libro, por lo tanto, el ciclo while continua hasta que el usuario decida comprar un libro (el vendedor menos insistente).  
+ */
 while (comprarlo.toUpperCase() !== "SI") {
 
         if (elegido) {
