@@ -1,0 +1,12 @@
+main {
+    height: 100vh;
+}
+
+.row {
+    height: 100%;
+}
+
+.plan {
+    color: blueviolet;
+    border: 1px solid black;
+}
