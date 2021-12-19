@@ -1,0 +1,24 @@
+main {
+    height: 100vh;
+}
+
+.row {
+    height: 100%;
+}
+
+.elPlan {
+    color: blueviolet;
+    background-color: cornsilk;
+    border: 2px solid black;
+    border-radius: 1rem;
+}
+
+.elPlan {
+    margin-top: 2rem;
+    padding: 0.5rem;
+}
+
+.formulario {
+    display: flex;
+    justify-content: center;
+}

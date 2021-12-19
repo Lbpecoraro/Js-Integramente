@@ -4,6 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
@@ -11,14 +12,29 @@
 </head>
 
 <body>
-    <main class="container-fluid">
-        <div id="planes" class="row justify-content-around align-items-center">
+    <main class="container-fluid" id="cuerpo">
+        <div class="row justify-content-center  align-items-center flex-column">
+
+            <p>Hola, has caido en decadencia mental y tu familia te ha amenazado con encerrarte en un manicomio si no
+                cedes a contratar por tu cuenta un plan de salud mental, para más info, elige "P" para la consulta
+                puntual, "B" para la consulta bimestral, y "S" para la consulta semanal</p>
+            <form class="formulario col-3" action="" id="formulario">
+                <input type="text" name="" id="eleccion">
+            </form>
+            <div id="infoForm" class="col-4">
+
+            </div>
+
+            <input type="button" value="comprar" class="col-1" id="comprar">
+
         </div>
     </main>
     <script src="main.js"></script>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
     </script>
+
 </body>
 
 </html>
