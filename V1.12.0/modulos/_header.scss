@@ -1,0 +1,238 @@
+@import '../utilidades/variables';
+@import '../utilidades/mediaQueries';
+
+.header {
+    @include medidas(100%, 15vh);
+    position: sticky;
+    top: 0;
+    z-index: 100000;
+    background: $blanco;
+    box-shadow: 0 5px .5rem $sombra;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 1rem 0 1rem;
+
+    @include tablet {
+        @include medidas(100%, 100%);
+        align-items: flex-start;
+        padding: 0;
+    }
+
+    & .row {
+        width: 100%;
+    }
+}
+
+.header__h1YNav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @include tablet {
+        justify-content: flex-end;
+        align-items: flex-start;
+    }
+}
+
+.header__elH1 {
+    text-decoration: none;
+
+    @include mobile {
+        margin-top: .5rem;
+    }
+
+    & h1 {
+        background: linear-gradient(to top, $lavanda1, $lavandaMuyClaro);
+        -webkit-background-clip: text;
+        color: transparent;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 2.5rem;
+
+        @include mobile {
+            font-size: 2rem;
+        }
+
+        @include miniMobile {
+            font-size: 1.5rem;
+        }
+    }
+}
+
+.header__navbar {
+    width: 100%;
+
+    @include tablet {
+        width: 35%;
+        position: relative;
+        top: 0;
+        left: 0;
+        z-index: 100;
+    }
+}
+
+.header__subMenu {
+    background-color: $blanco;
+    justify-content: center;
+}
+
+.navbar-toggler {
+    @include medidas (5rem, 3rem);
+
+    &:focus {
+        box-shadow: none;
+    }
+
+    & ion-icon {
+        @include medidas(2rem, 2rem);
+        color: $lavandaClaro;
+    }
+}
+
+.header__ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+
+    @include tablet {
+        align-items: flex-start;
+        padding-left: 1rem;
+    }
+
+    & li {
+        font-size: 1.2rem;
+        list-style-type: none;
+        position: relative;
+        border-bottom: 1px solid $transparente;
+        transition: all .4s ease;
+    }
+
+    & li:hover {
+        border-bottom: 1.5px solid $lavanda1;
+
+        @include tablet {
+            border-bottom: 1.5px solid transparent;
+        }
+    }
+
+    & li a:focus {
+        background: linear-gradient(to top, $lavanda1, $lavandaMuyClaro);
+        -webkit-background-clip: text;
+        color: transparent;
+    }
+
+    & li:hover .aGradient {
+        background: linear-gradient(to top, $lavanda1, $lavandaMuyClaro);
+        -webkit-background-clip: text;
+        color: transparent;
+    }
+
+    .aGradient {
+        text-decoration: none;
+        color: $negro;
+        transition: all .5s ease;
+    }
+}
+
+
+.inicioDeSesion {
+    &:focus {
+        box-shadow: none;
+    }
+}
+
+.inicioDeSesion__iconContainer {
+    height: 100%;
+    @include medidas(2rem, 2rem);
+    color: $lavanda1;
+
+    & ion-icon {
+        @include medidas(2rem, 2rem)
+    }
+}
+
+.modalInicioDeSesion {
+    margin-top: 15rem;
+
+    .modal-dialog {
+        display: flex;
+        justify-content: center;
+    }
+
+    .modal-content {
+        height: 20rem;
+        width: 30rem;
+        border: none;
+        border-radius: 1rem;
+    }
+
+    .modal-body {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        background: $lavandaClaro;
+        color: $blanco;
+        border-radius: 1rem;
+    }
+
+    .modalInicioDeSesion__h3 {
+        align-self: center;
+
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        height: 100%;
+
+        div {
+            display: flex;
+            flex-direction: column;
+        }
+
+    }
+
+    .inicioDeSesion__send {
+        width: 7rem;
+        align-self: flex-end;
+        background: $blanco;
+        color: $lavandaClaro;
+        border: none;
+        border-radius: .5rem;
+    }
+}
+
+
+.header__redes {
+    justify-content: center;
+    align-items: center;
+
+    @include tablet {
+        margin-top: .5rem;
+    }
+
+    & a {
+        text-decoration: none;
+        width: 2rem;
+        margin: 0 .5rem;
+    }
+
+    & ion-icon {
+        @include medidas(2rem, 2rem);
+        color: $lavanda1;
+    }
+}
+
+.dropdown-menu {
+    border: none;
+    position: relative;
+}
+
+@include tablet {
+
+    .inicioDeSesion {
+        margin-top: .5rem;
+    }
+}
