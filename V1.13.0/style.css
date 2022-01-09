@@ -446,11 +446,6 @@ html {
   color: transparent;
 }
 
-.oculto {
-  visibility: hidden;
-  opacity: 1;
-}
-
 html {
   font-family: "Roboto", sans-serif;
   font-size: 14px;

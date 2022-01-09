@@ -32,7 +32,7 @@ $(() => {
     `);
 
         planesContainer.append(`
-        <div id="planElegido${i+1}" class="planElegido oculto"> 
+        <div id="planElegido${i+1}" class="planElegido"> 
               <h3 class="planElegido__h3">${planecitos[i].nombre}</h3>
               <p class="planElegido__p">${planecitos[i].descripcion}</p>
                     <div class="planElegido__div">
@@ -48,61 +48,33 @@ $(() => {
     let sesiones = $('.plan');
     let planesElegidos = $('.planElegido');
 
+    planesElegidos.each(function (indice, elemento) {
+        $(elemento).hide()
+    })
+
     sesiones.each(function (ind, element) {
-        console.log(planesElegidos.eq(0).hasClass('oculto'));
         $(element).click(() => {
             if ($(element).attr('id') === "plan1") {
-                if (planesElegidos.eq(0).hasClass('oculto') === true) {
-
-                    planesElegidos.eq(0).removeClass("oculto")
-                } else {
-                    planesElegidos.eq(0).addClass("oculto")
-                }
-                if (planesElegidos.eq(1).hasClass('oculto') === false) {
-                    planesElegidos.eq(1).addClass("oculto");
-                } else if (planesElegidos.eq(2).hasClass('oculto') === false) {
-                    planesElegidos.eq(2).addClass("oculto");
-                }
+                planesElegidos.eq(0).fadeIn(300);
+                planesElegidos.eq(1).fadeOut(300);
+                planesElegidos.eq(2).fadeOut(300);
             } else if ($(element).attr('id') === "plan2") {
-                if (planesElegidos.eq(1).hasClass('oculto') === true) {
-
-                    planesElegidos.eq(1).removeClass("oculto")
-                } else {
-                    planesElegidos.eq(1).addClass("oculto")
-                }
-                if (planesElegidos.eq(0).hasClass('oculto') === false) {
-                    planesElegidos.eq(0).addClass("oculto");
-                } else if (planesElegidos.eq(2).hasClass('oculto') === false) {
-                    planesElegidos.eq(2).addClass("oculto");
-                }
-
+                planesElegidos.eq(1).fadeIn(300);
+                planesElegidos.eq(0).fadeOut(300);
+                planesElegidos.eq(2).fadeOut(300);
             } else if ($(element).attr('id') === "plan3") {
-
-                if (planesElegidos.eq(2).hasClass('oculto') === true) {
-
-                    planesElegidos.eq(2).removeClass("oculto")
-                } else {
-                    planesElegidos.eq(2).addClass("oculto")
-                }
-                if (planesElegidos.eq(0).hasClass('oculto') === false) {
-                    planesElegidos.eq(0).addClass("oculto");
-                } else if (planesElegidos.eq(1).hasClass('oculto') === false) {
-                    planesElegidos.eq(1).addClass("oculto");
-                }
+                planesElegidos.eq(2).fadeIn(300);
+                planesElegidos.eq(1).fadeOut(300);
+                planesElegidos.eq(0).fadeOut(300);
             }
-
         })
     })
 
-
-
     let cerrar = $('.botonCerrar');
     cerrar.each(function (ind, element) {
-        console.log(element);
         $(element).click(() => {
-            console.log("hola");
             planesElegidos.each(function (indice, elemento) {
-                $(elemento).addClass("oculto")
+                $(elemento).fadeOut(300)
             })
         })
 

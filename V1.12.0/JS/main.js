@@ -49,11 +49,9 @@ $(() => {
     let planesElegidos = $('.planElegido');
 
     sesiones.each(function (ind, element) {
-        console.log(planesElegidos.eq(0).hasClass('oculto'));
         $(element).click(() => {
             if ($(element).attr('id') === "plan1") {
                 if (planesElegidos.eq(0).hasClass('oculto') === true) {
-
                     planesElegidos.eq(0).removeClass("oculto")
                 } else {
                     planesElegidos.eq(0).addClass("oculto")
@@ -65,7 +63,6 @@ $(() => {
                 }
             } else if ($(element).attr('id') === "plan2") {
                 if (planesElegidos.eq(1).hasClass('oculto') === true) {
-
                     planesElegidos.eq(1).removeClass("oculto")
                 } else {
                     planesElegidos.eq(1).addClass("oculto")
@@ -75,11 +72,8 @@ $(() => {
                 } else if (planesElegidos.eq(2).hasClass('oculto') === false) {
                     planesElegidos.eq(2).addClass("oculto");
                 }
-
             } else if ($(element).attr('id') === "plan3") {
-
                 if (planesElegidos.eq(2).hasClass('oculto') === true) {
-
                     planesElegidos.eq(2).removeClass("oculto")
                 } else {
                     planesElegidos.eq(2).addClass("oculto")
@@ -90,7 +84,6 @@ $(() => {
                     planesElegidos.eq(1).addClass("oculto");
                 }
             }
-
         })
     })
 
