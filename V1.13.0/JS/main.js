@@ -80,5 +80,36 @@ $(() => {
 
     })
 
+    $("#facebook").hide()
+    $("#instagram").hide()
+    $("#twitter").hide()
+    facebook()
+
+
+    // $("#facebook").fadeIn(1000).fadeOut(1000).fadeIn(1000)
+    // $("#instagram").fadeIn(1000).fadeOut(1000).fadeIn(1000)
+    // $("#twitter").fadeIn(1000).fadeOut(1000).fadeIn(1000)
+
+
+
+
+    function facebook() {
+
+        $("#facebook").fadeIn(1000).fadeOut(1000)
+        instagram()
+    }
+
+    function instagram() {
+        $("#instagram").delay(2000).fadeIn(1000).fadeOut(1000)
+        twitter()
+    }
+
+    function twitter() {
+        $("#twitter").delay(4000).fadeIn(1000).fadeOut(1000)
+
+        $("#facebook").delay(4000).fadeIn(1000)
+        $("#instagram").delay(3000).fadeIn(1000)
+        $("#twitter").delay(2000).fadeIn(1000)
+    }
 
 })
