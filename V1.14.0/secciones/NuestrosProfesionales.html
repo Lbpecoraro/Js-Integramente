@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Tu salud mental es nuestra prioridad, por eso te brindamos acceso a los profesionaes de nuestro equipo.">
+    <meta name="keywords"
+        content="psicólogos, profesionales-psicología, psicología, terapia, salud-mental, trastornos-mentales,  ansiedad, depresión, bipolaridad, ansiedad-covid19">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <link rel="stylesheet" href="../style.css">
+    <title>Profesionales | Integramente</title>
+</head>
+
+<body class="p-0">
+    <header class="header container-fluid">
+        <div class="row justify-content-between flex-row-reverse flex-lg-row">
+            <div class="header__h1YNav col-lg-8 col-12 flex-row-reverse flex-lg-row">
+                <a class="header__elH1" href="../index.html">
+                    <h1 class="my-0 ms-0 me-sm-5 ">INTEGRAMENTE</h1>
+                </a>
+                <nav class="navbar navbar-expand-lg header__navbar p-0">
+                    <div class="container-fluid p-0">
+                        <button class="navbar-toggler p-0" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                            aria-label="Toggle navigation">
+                            <ion-icon name="menu-outline"></ion-icon>
+                        </button>
+                        <div class="collapse navbar-collapse header__subMenu" id="navbarNavDropdown">
+                            <ul class="navbar-nav header__ul">
+                                <button type="button" class="btn inicioDeSesion  d-block d-lg-none col-lg-1"
+                                    data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                    <div class="inicioDeSesion__iconContainer ">
+                                        <ion-icon name="person-outline"></ion-icon>
+                                    </div>
+                                </button>
+                                <li class="nav-item">
+                                    <a class="aGradient nav-link active" aria-current="page"
+                                        href="../index.html">Home</a>
+
+                                <li class="nav-item">
+                                    <a class="aGradient nav-link" href="Servicios.html">Servicios</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="aGradient nav-link" href="NuestrosProfesionales.html">Profesionales</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class=" aGradient nav-link" href="Blog.html">Blog</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="aGradient nav-link" href="Contacto.html">Contacto</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+            <!-- Button trigger modal -->
+            <button type="button" class="btn inicioDeSesion  d-none d-lg-block col-lg-1" data-bs-toggle="modal"
+                data-bs-target="#exampleModal">
+                <div class="inicioDeSesion__iconContainer ">
+                    <ion-icon name="person-outline"></ion-icon>
+                </div>
+            </button>
+
+            <!-- Modal -->
+            <div class="modal  fade modalInicioDeSesion" id="exampleModal" tabindex="-1"
+                aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-body">
+                            <h3 class="modalInicioDeSesion__h3"> Bienvenid@s a Integramente</h3>
+                            <form action="">
+                                <div>
+                                    <label for="email">Correo electrónico</label>
+                                    <input class="modalInicioDeSesion__email" type="email" name="email" id=""
+                                        placeholder="Ingrese su correo electrónico">
+                                </div>
+                                <div>
+                                    <label for="password">Contraseña</label>
+                                    <input type="password" class="modalInicioDeSesion__password"
+                                        placeholder="Ingrese su contraseña" name="password">
+                                </div>
+                                <input class="inicioDeSesion__send" type="submit" value="Iniciar sesión">
+                            </form>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <!-- Acá van las redes sociales -->
+            <div class="header__redes d-lg-flex d-none col-lg-1">
+                <a href="https://www.facebook.com/">
+                    <ion-icon class="m-0" name="logo-facebook"></ion-icon>
+                </a>
+                <a href="https://www.instagram.com/">
+                    <ion-icon class="m-0" name="logo-instagram"></ion-icon>
+                </a>
+                <a href="https://twitter.com/home">
+                    <ion-icon class="m-0" name="logo-twitter"></ion-icon>
+                </a>
+            </div>
+        </div>
+    </header>
+    <main class="mainProfesionales">
+        <section class="mainProfesionales__section container-fluid">
+            <div class="row justify-content-evenly gap-4  m-0">
+                <!-- Button trigger modal -->
+                <button type="button " class="btn mainProfesionales__modalProfesional col-lg-5 col-10 p-0 "
+                    data-bs-toggle="modal" data-bs-target="#exampleModal1">
+                    <div class="profesional ">
+                        <div class="profesional__img profesional__img--profesionalMujer1"></div>
+                        <div class="profesional__info">
+                            <p> <b>Nombre y apellido:</b> Romina Galvez </p>
+                            <p> <b>Especialidad:</b> Trastornos de ansiedad y estrés </p>
+                            <p> <b>Corriente:</b> Cognitivo conductual </p>
+                            <p> <b>Años de experiencia:</b>9 </p>
+                        </div>
+                    </div>
+                </button>
+                <!-- Modal -->
+                <div class=" modalProfesional modal fade p-0" id="exampleModal1" tabindex="-1"
+                    aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-body p-0">
+                                <div class="card tarjetaProfesional">
+                                    <img src="../images/profesionalMujer1.jpg" class="card-img-top" alt="...">
+                                    <div class="tarjetaProfesional__info">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Romina Galvez</h5>
+                                            <p class="card-text">Licenciada en psicología recibida en la Universidad
+                                                Católica Argentina, diplomada en Terapia Cognitivo Comportamental de los
+                                                Trastornos Psicológicos. He trabajado en distintas instituciones
+                                                clínicas,
+                                                principalmente con adolescentes y adultos. Mi enfoque se basa en la
+                                                colaboración mutua entre psicólogo paciente para que este pueda sentirse
+                                                más
+                                                tranquilo y seguro en su día a día.</p>
+                                        </div>
+                                        <ul class=" list-group list-group-flush">
+                                            <li class="list-group-item">Especialidad en trastornos de ansiedad y estrés
+                                            </li>
+                                            <li class="list-group-item">Corriente cognitivo conductual</li>
+                                            <li class="list-group-item">9 años de experiencia</li>
+                                            <li class="list-group-item">Matrícula: 1234</li>
+                                        </ul>
+                                        <button type="button" class="btn">¡Contáctame!</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <button type="button " class="btn mainProfesionales__modalProfesional col-lg-5 col-10 p-0"
+                    data-bs-toggle="modal" data-bs-target="#exampleModal2">
+                    <div class="profesional">
+                        <div class="profesional__img profesional__img--profesionalHombre1"></div>
+                        <div class="profesional__info">
+                            <p> <b>Nombre y apellido:</b> Antonio Ferrer </p>
+                            <p> <b>Especialidad:</b> Psicología educativa </p>
+                            <p> <b>Corriente:</b> Psicología integrativa</p>
+                            <p> <b>Años de experiencia:</b> 7 </p>
+                        </div>
+                    </div>
+                </button>
+                <!-- Modal -->
+                <div class=" modalProfesional modal fade" id="exampleModal2" tabindex="-1"
+                    aria-labelledby="exampleModalLabel2" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="card tarjetaProfesional">
+                                <img src="../images/profesionalHombre1.jpg" class="card-img-top" alt="...">
+                                <div class="tarjetaProfesional__info">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Antonio Ferrer</h5>
+                                        <p class="card-text">Licenciado en psicología con experiencia docente de 15
+                                            años,
+                                            graduado en la Universidad de Congreso hace 7 años, siempre me he dedicado a
+                                            la docencia y a la educación y desde que me gradué ha sido mi foco
+                                            principal. Creo que cada persona es diferente y por eso su manera de
+                                            aprender lo es también, por lo que mi forma de abordar sus dificultades son
+                                            completamente personalizadas a cada uno</p>
+                                    </div>
+                                    <ul class=" list-group list-group-flush">
+                                        <li class="list-group-item">Especialidad en psicología de la educación</li>
+                                        <li class="list-group-item">Corriente psicologica integrativa</li>
+                                        <li class="list-group-item">7 años de experiencia</li>
+                                        <li class="list-group-item">Matrícula: 1234</li>
+                                    </ul>
+                                    <button type="button" class="btn">¡Contáctame!</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <button type="button " class="btn mainProfesionales__modalProfesional col-lg-5 col-10 p-0"
+                    data-bs-toggle="modal" data-bs-target="#exampleModal3">
+                    <div class="profesional ">
+                        <div class="profesional__img profesional__img--profesionalMujer2"></div>
+                        <div class="profesional__info">
+                            <p> <b>Nombre y apellido:</b> Marisa Fernández </p>
+                            <p> <b>Especialidad:</b> Neuropsicología </p>
+                            <p> <b>Corriente:</b> Neurocognitiva </p>
+                            <p> <b>Años de experiencia:</b> 5 </p>
+                        </div>
+                    </div>
+                </button>
+                <!-- Modal -->
+                <div class=" modalProfesional modal fade" id="exampleModal3" tabindex="-1"
+                    aria-labelledby="exampleModalLabel3" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="card tarjetaProfesional">
+                                <img src="../images/profesionalMujer2.jpg" class="card-img-top" alt="...">
+                                <div class="tarjetaProfesional__info">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Marisa Fernández</h5>
+                                        <p class="card-text">Profesional psicóloga recibida en la universidad Favaloro,
+                                            especializada en la rama de las neurociencias. Especialista en
+                                            psicodiagnósticos y evaluaciones neurocognitivas, mi trabajo se encuentra
+                                            más dedicado a las funciones cognitivas y neuronales, tales como la
+                                            atención, memoria,
+                                            el aprendizaje, la percepción, lenguaje, el pensamiento, o las funciones
+                                            ejecutivas, entre otros.</p>
+                                    </div>
+                                    <ul class=" list-group list-group-flush">
+                                        <li class="list-group-item">Neuropsicóloga</li>
+                                        <li class="list-group-item">Corriente neurocognitiva</li>
+                                        <li class="list-group-item">5 años de experiencia</li>
+                                        <li class="list-group-item">Matrícula: 1234</li>
+                                    </ul>
+                                    <button type="button" class="btn">¡Contáctame!</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <button type="button " class="btn mainProfesionales__modalProfesional col-lg-5 col-10 p-0"
+                    data-bs-toggle="modal" data-bs-target="#exampleModal4">
+                    <div class="profesional">
+                        <div class="profesional__img profesional__img--profesionalHombre2"></div>
+                        <div class="profesional__info">
+                            <p> <b>Nombre y apellido:</b> Javier Antequera </p>
+                            <p> <b>Especialidad:</b> Parejas </p>
+                            <p> <b>Corriente:</b> Sistémica</p>
+                            <p> <b>Años de experiencia:</b> 2 </p>
+                        </div>
+                    </div>
+                </button>
+                <!-- Modal -->
+                <div class=" modalProfesional modal fade" id="exampleModal4" tabindex="-1"
+                    aria-labelledby="exampleModalLabel4" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="card tarjetaProfesional">
+                                <img src="../images/profesionalHombre2.jpg" class="card-img-top" alt="...">
+                                <div class="tarjetaProfesional__info">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Javier Antequera</h5>
+                                        <p class="card-text">Licenciado en psicología de la universidad de Buenos Aires.
+                                            Me dedico desde el pensamiento sitémico a atender principalmente parejas,
+                                            aunque también hago terapias grupales y familiares. comprendo que cada
+                                            consultante y/o paciente tiene sus particularidades, sus necesidades, sus
+                                            demandas, por lo que cada proceso debe configurarse respondiendo a esto y
+                                            llegando a un punto medio entre quienes forman parte del sistema.</p>
+                                    </div>
+                                    <ul class=" list-group list-group-flush">
+                                        <li class="list-group-item">Psicoterapia de parejas</li>
+                                        <li class="list-group-item">Corriente sistémica</li>
+                                        <li class="list-group-item">2 años de experiencia</li>
+                                        <li class="list-group-item">Matrícula: 1234</li>
+                                    </ul>
+
+                                    <button type="button" class="btn">¡Contáctame!</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <button type="button " class="btn mainProfesionales__modalProfesional col-lg-5 col-10 p-0"
+                    data-bs-toggle="modal" data-bs-target="#exampleModal5">
+                    <div class="profesional">
+                        <div class="profesional__img profesional__img--profesionalMujer3"></div>
+                        <div class="profesional__info">
+                            <p> <b>Nombre y apellido:</b> Emilia Villegas </p>
+                            <p> <b>Especialidad:</b> Crisis vitales</p>
+                            <p> <b>Corriente:</b> Existencial Humanista </p>
+                            <p> <b>Años de experiencia:</b> 9 </p>
+                        </div>
+                    </div>
+                </button>
+                <!-- Modal -->
+                <div class=" modalProfesional modal fade" id="exampleModal5" tabindex="-1"
+                    aria-labelledby="exampleModalLabel5" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="card tarjetaProfesional">
+                                <img src="../images/profesionalMujer3.jpg" class="card-img-top" alt="...">
+                                <div class="tarjetaProfesional__info">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Emilia Villegas</h5>
+                                        <p class="card-text">Psicóloga recibida de la Universidad del Aconcagua. Me he
+                                            dedicado casi toda mi carrera a atender crisis vitales, tales como duelos,
+                                            pérdidas, separaciones, situaciones traumáticas, o quizas solamente ayudar
+                                            al paciente a encontrar su propio camino en su vida para poder darle
+                                            significado.</p>
+                                    </div>
+                                    <ul class=" list-group list-group-flush">
+                                        <li class="list-group-item">Crisis vitales</li>
+                                        <li class="list-group-item">Corriente existencial humanísta</li>
+                                        <li class="list-group-item">9 años de experiencia</li>
+                                        <li class="list-group-item">Matrícula: 1234</li>
+                                    </ul>
+
+                                    <button type="button" class="btn">¡Contáctame!</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <button type="button " class="btn mainProfesionales__modalProfesional col-lg-5 col-10 p-0"
+                    data-bs-toggle="modal" data-bs-target="#exampleModal6">
+                    <div class="profesional ">
+                        <div class="profesional__img profesional__img--profesionalHombre3"></div>
+                        <div class="profesional__info">
+                            <p> <b>Nombre y apellido:</b> Lautaro Ponce </p>
+                            <p> <b>Especialidad:</b> Gerontología </p>
+                            <p> <b>Corriente:</b> existencial humanísta</p>
+                            <p> <b>Años de experiencia:</b> 8 </p>
+                        </div>
+                    </div>
+                </button>
+                <!-- Modal -->
+                <div class=" modalProfesional modal fade" id="exampleModal6" tabindex="-1"
+                    aria-labelledby="exampleModalLabel6" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="card tarjetaProfesional">
+                                <img src="../images/profesionalHombre3.jpg" class="card-img-top" alt="...">
+                                <div class="tarjetaProfesional__info">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Lautaro Ponce</h5>
+                                        <p class="card-text">Psicólogo licenciado en la universidad de Córdoba, con
+                                            maestrías en geróntología, desarrollo, terapia a pacientes matores, dedicado
+                                            a los procesos de envejecimiento a lo largo del ciclo vital, promoviendo el
+                                            bienestar y una buena calidad de vida para las personas mayores y su
+                                            entorno.
+                                        </p>
+                                    </div>
+                                    <ul class=" list-group list-group-flush">
+                                        <li class="list-group-item">Gerontología</li>
+                                        <li class="list-group-item">Corriente existencial humanísta</li>
+                                        <li class="list-group-item">8 años de experiencia</li>
+                                        <li class="list-group-item">Matrícula: 1234</li>
+                                    </ul>
+                                    <button type="button" class="btn">¡Contáctame!</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <button type="button " class="btn mainProfesionales__modalProfesional col-lg-5 col-10 p-0"
+                    data-bs-toggle="modal" data-bs-target="#exampleModal7">
+                    <div class="profesional">
+                        <div class="profesional__img profesional__img--profesionalMujer4"></div>
+                        <div class="profesional__info">
+                            <p> <b>Nombre y apellido:</b> Alexandra Coria </p>
+                            <p> <b>Especialidad:</b> Sexología </p>
+                            <p> <b>Corriente:</b> Sistémica</p>
+                            <p> <b>Años de experiencia:</b> 6 </p>
+                        </div>
+                    </div>
+                </button>
+                <!-- Modal -->
+                <div class=" modalProfesional modal fade" id="exampleModal7" tabindex="-1"
+                    aria-labelledby="exampleModalLabel7" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+
+                            <div class="card tarjetaProfesional">
+                                <img src="../images/profesionalMujer4.jpg" class="card-img-top" alt="...">
+                                <div class="tarjetaProfesional__info">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Alexandra Coria</h5>
+                                        <p class="card-text">Psicóloga clínica graduada en la universidad de Mendoza,
+                                            con maestrías en sexología, psicología integrativa, perspectiva de género...
+                                            Principalmente me dedico individualmente o en parejas a tratar situaciones
+                                            conflictivas en la vida sexual de las personas. Algunos casos requieren la
+                                            combinación de las técnicas de la terapia sexual con un enfoque más amplio
+                                            que trabaje sobre otros aspectos de la personalidad.
+                                        </p>
+                                    </div>
+                                    <ul class=" list-group list-group-flush">
+                                        <li class="list-group-item">Sexología</li>
+                                        <li class="list-group-item">Corriente sistémica</li>
+                                        <li class="list-group-item">6 años de experiencia</li>
+                                        <li class="list-group-item">Matrícula: 1234</li>
+                                    </ul>
+                                    <button type="button" class="btn">¡Contáctame!</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <button type="button " class="btn mainProfesionales__modalProfesional col-lg-5 col-10 p-0"
+                    data-bs-toggle="modal" data-bs-target="#exampleModal8">
+                    <div class="profesional ">
+                        <div class="profesional__img profesional__img--profesionalHombre4"></div>
+                        <div class="profesional__info">
+                            <p> <b>Nombre y apellido:</b> José Luis Araya </p>
+                            <p> <b>Especialidad:</b> Infanto-Juvenil. </p>
+                            <p> <b>Corriente:</b> Cognitivista evolutiva</p>
+                            <p> <b>Años de experiencia:</b> 11 </p>
+                        </div>
+                    </div>
+                </button>
+                <!-- Modal -->
+                <div class=" modalProfesional modal fade" id="exampleModal8" tabindex="-1"
+                    aria-labelledby="exampleModalLabel8" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+
+                            <div class="card tarjetaProfesional">
+                                <img src="../images/profesionalHombre4.jpg" class="card-img-top" alt="...">
+                                <div class="tarjetaProfesional__info">
+                                    <div class="card-body">
+                                        <h5 class="card-title">José Luis Araya</h5>
+                                        <p class="card-text">Graduado de la universidad de Palermo, doctor en
+                                            psicología, estudié la maestría en
+                                            infanto juvenil en la Universidad de Valencia. Aplico estrategias de
+                                            intervención y habilidades terapéuticas para abordar las necesidades
+                                            infanto-juveniles desde el periodo perinatal hasta la adolescencia.
+                                            Cuento con técnicas para el entrenamiento y la mejora del
+                                            rol de padres, tutores legales y familiares ajustadas a las necesidades de
+                                            cada caso, pues su participación es clave para un tratamiento adecuado y
+                                            eficaz.
+                                        </p>
+                                    </div>
+                                    <ul class=" list-group list-group-flush">
+                                        <li class="list-group-item">Infanto-Juvenil.</li>
+                                        <li class="list-group-item">Corriente cognitivista evolutiva</li>
+                                        <li class="list-group-item">11 años de experiencia</li>
+                                        <li class="list-group-item">Matrícula: 1234</li>
+                                    </ul>
+                                    <button type="button" class="btn">¡Contáctame!</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="container-fluid">
+            <div
+                class="footer__secciones row justify-content-md-between justify-content-center text-md-start text-center">
+                <h2 class="footer__columna1 col-md-4 align-self-center col-sm-7 mt-md-0 mt-3">INTEGRAMENTE</h2>
+                <div class="footer__columna2 text-md-start text-center col-md-2 col-sm-7 mt-md-0 mt-3">
+                    <a href="Servicios.html">
+                        <h3>Servicios</h3>
+                    </a>
+                    <a href="../index.html">Planes</a>
+                    <a href="Servicios.html" class="especialidadesFooter">Especialidades</a>
+                    <a href="NuestrosProfesionales.html">Nuestros profesionales</a>
+                </div>
+                <!-- INICIO DE SECCIÓN LEGAL -->
+                <div class="footer__columna3 text-md-start text-center col-md-2 col-sm-7 mt-md-0 mt-3">
+                    <a href=" #aquiIriaUnaPaginaDePoliticasDeLaWebPeroAhoraNoPorQueNecesitoUnAbogadoParaHacerlasYSoyEstudiante "
+                        class="politicasDePrivacidad">
+                        <h3>Políticas de privacidad</h3>
+                    </a>
+                    <a
+                        href="http://www.psi.uba.ar/academica/carrerasdegrado/psicologia/sitios_catedras/obligatorias/066_salud2/material/normativas_legislaciones/ley_nacional_23277.pdf">Ley
+                        23.277 del ejercicio profesional de psicología</a>
+                    <a href="http://fepra.org.ar/docs/acerca_fepra/codigo_de_etica_nacional_2013.pdf">Código de
+                        ética</a>
+                    <a class="fepra" href="http://www.fepra.org.ar/feprav3/">Fepra</a>
+                </div>
+                <div class="footer__columna4 text-md-start text-center col-md-2 col-sm-7 mt-md-0 mt-3">
+                    <a href="#notengopreguntasfrecuentesporquenadiepreguntanadaevidentemente">
+                        <h3>Preguntas frecuentes</h3>
+                    </a>
+
+                    <a href="acaesparagentequesequieraunirytrabajar:)">
+                        <h3>¿Éres profesional? ¡Únetenos!</h3>
+                    </a>
+                </div>
+                <!-- INICIO DE REDES SOCIALES DEL FOOTER -->
+                <div class="footer__columna5 align-self-center col-md-2 col-sm-7 mt-md-0 mt-3">
+                    <div>
+                        <a href="https://www.facebook.com/">
+                            <ion-icon name="logo-facebook"></ion-icon>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="https://www.instagram.com/">
+                            <ion-icon name="logo-instagram"></ion-icon>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="https://twitter.com/home">
+                            <ion-icon name="logo-twitter"></ion-icon>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous">
+    </script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>

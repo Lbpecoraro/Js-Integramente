@@ -197,3 +197,36 @@
 // }
 
 // alert(carrito)
+
+// practica 16
+
+// function entrada() {
+//     let nombre = prompt("Ingresa tu nombre")
+//     procesamiento(nombre);
+// }
+// entrada();
+
+// function procesamiento(nombre) {
+//     let mayus = nombre.toUpperCase();
+//     salida(mayus)
+// }
+
+// function salida(salida) {
+//     alert(salida);
+// }
+
+// practica 17
+
+// function redondear(numero) {
+//     return Math.round(numero)
+// }
+// for (let i = 0; i < 5; i++) {
+//     let decimal = prompt("ingresa un número con decimal");
+//     let resultado = redondear(decimal);
+//     console.log(resultado);
+// }
+
+
+function impuesto(precio, procentaje) {
+
+}

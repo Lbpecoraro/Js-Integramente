@@ -1,0 +1,185 @@
+@import '../utilidades/variables';
+@import '../utilidades/mediaQueries';
+
+.mainBlog {
+    @include medidas(100%, 75vh);
+    background: url(../../V1.8.0/images/lavandaFondo.jpg);
+    @include background (no-repeat, cover, 30% 80%);
+    padding: 1.5rem;
+
+    @include tablet {
+        @include medidas(100%, 100%);
+    }
+}
+
+.mainBlog__modalBlog {
+    z-index: 101000;
+    margin-top: 14rem;
+
+    .btn {
+        color: black;
+
+        &:hover {
+            background: linear-gradient(to top, $lavanda1, $lavandaMuyClaro);
+            -webkit-background-clip: text;
+            color: transparent;
+        }
+
+        &:focus {
+            box-shadow: none;
+        }
+    }
+}
+
+.mainBlog__sectionAdvertencia {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.mainBlog__btnAdvertencia {
+    background: linear-gradient(to top, $lavanda1, $lavandaMuyClaro);
+    border: none;
+    color: $casiBlanco;
+
+    &:focus {
+        box-shadow: none;
+        border: none;
+    }
+}
+
+.mainBlog__sectionArticulos {
+    @include medidas(100%, 85%);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    @include tablet {
+        margin-top: 2rem;
+    }
+
+    & .row {
+        width: 100%;
+    }
+}
+
+.mainBlog__contenedor1,
+.mainBlog__contenedor2,
+.mainBlog__contenedor3,
+.mainBlog__contenedor4,
+.mainBlog__contenedor5,
+.mainBlog__contenedor6 {
+    height: 100%;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    cursor: pointer;
+}
+
+.mainBlog__contenedor1,
+.mainBlog__contenedor3,
+.mainBlog__contenedor5 {
+    flex-direction: column;
+}
+
+.mainBlog__contenedor2,
+.mainBlog__contenedor4,
+.mainBlog__contenedor6 {
+    flex-direction: column-reverse;
+}
+
+@include tablet {
+
+    .mainBlog__contenedor4,
+    .mainBlog__contenedor6 {
+        flex-direction: column;
+    }
+
+    .mainBlog__contenedor5 {
+        flex-direction: column-reverse;
+    }
+}
+
+@include mobile {
+
+    .mainBlog__contenedor4,
+    .mainBlog__contenedor6 {
+        flex-direction: column-reverse;
+    }
+
+    .mainBlog__contenedor5 {
+        flex-direction: column;
+    }
+}
+
+@include miniMobile {
+
+    .mainBlog__contenedor2,
+    .mainBlog__contenedor4,
+    .mainBlog__contenedor6 {
+        flex-direction: column;
+    }
+
+    .mainBlog__articuloGrande {
+        margin-bottom: 1rem;
+    }
+}
+
+.mainBlog__articuloGrande,
+.mainBlog__articuloChico {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 90%;
+    margin-bottom: 1rem;
+    border-radius: 1rem;
+    box-shadow: 5px 5px .5rem $sombra;
+    overflow: hidden;
+    transition: all .3s ease;
+
+    &:hover {
+        transform: scale(1.05, 1.05);
+    }
+
+    & img {
+        width: 100%;
+        object-fit: cover;
+    }
+}
+
+.mainBlog__descripcion {
+    position: absolute;
+    z-index: 10;
+    width: 100%;
+    bottom: 0;
+    background: $lavandaOscuroTransparente;
+    margin: 0;
+    color: $casiBlanco;
+    font-family: 'Roboto', sans-serif;
+    font-size: medium;
+    text-align: center;
+    transition: all .3s ease;
+}
+
+.mainBlog__articuloGrande:hover>.mainBlog__descripcion,
+.mainBlog__articuloChico:hover>.mainBlog__descripcion {
+    background: $lavanda1;
+}
+
+.mainBlog__articuloGrande {
+    height: 15rem;
+}
+
+.mainBlog__articuloChico {
+    height: 10rem;
+}
+
+@each $size in Grande,
+Chico {
+    @for $i from 1 through 6 {
+        .mainBlog__articulo#{$size}--art#{$size}#{$i} {
+            background: url('../../V1.8.0/images/art#{$size}#{$i}.jpg');
+            @include background (no-repeat, cover, center);
+        }
+    }
+}

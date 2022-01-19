@@ -1,0 +1,33 @@
+html {
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+}
+
+$lavanda1:#9E05FF;
+$lavandaMuyClaro:#F2DCFF;
+$lavandaClaro:#c06cf5;
+$lavandaOscuro:#5c0096;
+$casiBlanco:#F9F0FF;
+$blanco:rgb(255, 255, 255);
+$negro: rgb(0, 0, 0);
+$sombra: rgba(29, 29, 29, 0.445);
+$grisMuyClaro:#f1f1f1dc;
+$gris:rgba(129, 129, 129, 0.767);
+$blancoTransparente: rgba(255, 255, 255, 0.493);
+$transparente: rgba(255, 255, 255, 0);
+$lavandaOscuroTransparente: #9f05ff88;
+
+@mixin medidas ($width, $height) {
+    width: $width;
+    height: $height;
+}
+
+@mixin background ($repeat, $size, $position) {
+    background-repeat: $repeat;
+    background-size: $size;
+    background-position: $position;
+}
+
+@mixin transition {
+    transition: all .4s ease;
+}
