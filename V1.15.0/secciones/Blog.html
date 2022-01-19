@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Te brindamos información actualizada, revisada y confiable acerca de temas relacionados a la psicología y sus trastornos y tratamientos. ">
+    <meta name="keywords"
+        content="psicología, información-salud-mental, papers-psicología, salud-mental, trastornos-mentales, psicólogos, ansiedad, depresión, bipolaridad, ansiedad-covid19">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <link rel="stylesheet" href="../style.css">
+    <title>Blog | Integramente</title>
+</head>
+
+<body>
+    <header class="header container-fluid">
+        <div class="row justify-content-between flex-row-reverse flex-lg-row">
+            <div class="header__h1YNav col-lg-8 col-12 flex-row-reverse flex-lg-row">
+                <a class="header__elH1" href="../index.html">
+                    <h1 class="my-0 ms-0 me-sm-5 ">INTEGRAMENTE</h1>
+                </a>
+                <nav class="navbar navbar-expand-lg header__navbar p-0">
+                    <div class="container-fluid p-0">
+                        <button class="navbar-toggler p-0" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                            aria-label="Toggle navigation">
+                            <ion-icon name="menu-outline"></ion-icon>
+                        </button>
+                        <div class="collapse navbar-collapse header__subMenu" id="navbarNavDropdown">
+                            <ul class="navbar-nav header__ul">
+                                <button type="button" class="btn inicioDeSesion  d-block d-lg-none col-lg-1"
+                                    data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                    <div class="inicioDeSesion__iconContainer ">
+                                        <ion-icon name="person-outline"></ion-icon>
+                                    </div>
+                                </button>
+                                <li class="nav-item">
+                                    <a class="aGradient nav-link active" aria-current="page"
+                                        href="../index.html">Home</a>
+
+                                <li class="nav-item">
+                                    <a class="aGradient nav-link" href="Servicios.html">Servicios</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="aGradient nav-link" href="NuestrosProfesionales.html">Profesionales</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class=" aGradient nav-link" href="Blog.html">Blog</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="aGradient nav-link" href="Contacto.html">Contacto</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+            <!-- Button trigger modal -->
+            <button type="button" class="btn inicioDeSesion  d-none d-lg-block col-lg-1" data-bs-toggle="modal"
+                data-bs-target="#exampleModal">
+                <div class="inicioDeSesion__iconContainer ">
+                    <ion-icon name="person-outline"></ion-icon>
+                </div>
+            </button>
+
+            <!-- Modal -->
+            <div class="modal  fade modalInicioDeSesion" id="exampleModal" tabindex="-1"
+                aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+
+                        <div class="modal-body">
+
+                            <h3 class="modalInicioDeSesion__h3"> Bienvenid@s a Integramente</h3>
+                            <form action="">
+                                <div>
+                                    <label for="email">Correo electrónico</label>
+                                    <input class="modalInicioDeSesion__email" type="email" name="email" id=""
+                                        placeholder="Ingrese su correo electrónico">
+                                </div>
+                                <div>
+                                    <label for="password">Contraseña</label>
+                                    <input type="password" class="modalInicioDeSesion__password"
+                                        placeholder="Ingrese su contraseña" name="password">
+                                </div>
+                                <input class="inicioDeSesion__send" type="submit" value="Iniciar sesión">
+                            </form>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <!-- Acá van las redes sociales -->
+            <div class="header__redes d-lg-flex d-none col-lg-1">
+                <a href="https://www.facebook.com/">
+                    <ion-icon class="m-0" name="logo-facebook"></ion-icon>
+                </a>
+                <a href="https://www.instagram.com/">
+                    <ion-icon class="m-0" name="logo-instagram"></ion-icon>
+                </a>
+                <a href="https://twitter.com/home">
+                    <ion-icon class="m-0" name="logo-twitter"></ion-icon>
+                </a>
+            </div>
+        </div>
+    </header>
+    <main class="mainBlog">
+        <section class="mainBlog__sectionAdvertencia">
+
+            <!-- Button trigger modal -->
+            <div class="mainBlog__advertencia">
+                <button type="button" class="btn mainBlog__btnAdvertencia" data-bs-toggle="modal"
+                    data-bs-target="#staticBackdrop">
+                    ADVERTENCIA: Lee esto antes de continuar
+                </button>
+
+                <!-- Modal -->
+                <div class="modal fade mainBlog__modalBlog" id="staticBackdrop" data-bs-backdrop="static"
+                    data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="staticBackdropLabel">Advertencia: contenido sensible</h5>
+
+                            </div>
+                            <div class="modal-body">
+                                Esta sección de la página cuenta con papers, informes y artículos publicados acerca de
+                                temas de psicología y salud mental. Algunos, pueden llegar a ser sensibles ante ciertas
+                                personas. Si has sido diagnósticado con algún grave trastorno psicológico/psiquiatrico o
+                                crees tenerlo, manejate con discreción y evita ingresar a aquellos artículos que pueden
+                                parecerte de contenido sensible.
+                                El sitio web no se hará responsable por las demás consecuencias luego de este aviso.
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn" data-bs-dismiss="modal">¡Entendido!</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="mainBlog__sectionArticulos container-fluid">
+            <div class="row justify-content-around">
+                <div class="mainBlog__contenedor1 col-lg-2 col-md-4 col-sm-6 p-0">
+                    <div class="mainBlog__articuloGrande mainBlog__articuloGrande--artGrande1">
+                        <h3 class=" mainBlog__descripcion">Yoga y sus beneficios contra el estrés</h3>
+                    </div>
+                    <div class="mainBlog__articuloChico mainBlog__articuloChico--artChico1">
+                        <h3 class=" mainBlog__descripcion">Ataques de ansiedad: el descontrol sobre el control</h3>
+                    </div>
+                </div>
+                <div class="mainBlog__contenedor2 col-lg-2 col-md-4 col-sm-6 p-0">
+                    <div class="mainBlog__articuloGrande mainBlog__articuloGrande--artGrande2">
+                        <h3 class=" mainBlog__descripcion">Los efectos de la serotonina en pacientes ciclotímicos
+                        </h3>
+                    </div>
+                    <div class="mainBlog__articuloChico mainBlog__articuloChico--artChico2">
+                        <h3 class=" mainBlog__descripcion">Conexiones neuronales en el Alzheimer</h3>
+                    </div>
+                </div>
+                <div class="mainBlog__contenedor3 col-lg-2 col-md-4 col-sm-6 p-0">
+                    <div class="mainBlog__articuloGrande mainBlog__articuloGrande--artGrande3">
+                        <h3 class=" mainBlog__descripcion">Emociones: Anclas que hunden</h3>
+                    </div>
+                    <div class="mainBlog__articuloChico mainBlog__articuloChico--artChico3">
+                        <h3 class=" mainBlog__descripcion">Familiares tóxicos: cuando es mejor cortar lazos</h3>
+                    </div>
+                </div>
+                <div class="mainBlog__contenedor4 col-lg-2 col-md-4 col-sm-6 p-0">
+                    <div class="mainBlog__articuloGrande mainBlog__articuloGrande--artGrande4">
+                        <h3 class=" mainBlog__descripcion">Sobrepensamiento: Cuando lo excesivo resta</h3>
+                    </div>
+                    <div class="mainBlog__articuloChico mainBlog__articuloChico--artChico4">
+                        <h3 class=" mainBlog__descripcion">Depresión del sujeto emergente en el sistema</h3>
+                    </div>
+                </div>
+                <div class="mainBlog__contenedor5 col-lg-2 col-md-4 col-sm-6 p-0">
+                    <div class="mainBlog__articuloGrande mainBlog__articuloGrande--artGrande5">
+                        <h3 class=" mainBlog__descripcion">Mayor incidencia de la bipolaridad en mujeres</h3>
+                    </div>
+                    <div class="mainBlog__articuloChico mainBlog__articuloChico--artChico5">
+                        <h3 class=" mainBlog__descripcion">Sobre la depresión</h3>
+                    </div>
+                </div>
+                <div class="mainBlog__contenedor6 col-lg-2 d-lg-none col-md-4 col-sm-6 p-0 ">
+                    <div class="mainBlog__articuloGrande mainBlog__articuloGrande--artGrande6">
+                        <h3 class=" mainBlog__descripcion">Hablemos de la depresión infantil</h3>
+                    </div>
+                    <div class="mainBlog__articuloChico mainBlog__articuloChico--artChico6">
+                        <h3 class=" mainBlog__descripcion">Videojuegos y su relación con las convulsiones</h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="container-fluid">
+            <div
+                class="footer__secciones row justify-content-md-between justify-content-center text-md-start text-center">
+                <h2 class="footer__columna1 col-md-4 align-self-center col-sm-7 mt-md-0 mt-3">INTEGRAMENTE</h2>
+                <div class="footer__columna2 text-md-start text-center col-md-2 col-sm-7 mt-md-0 mt-3">
+                    <a href="Servicios.html">
+                        <h3>Servicios</h3>
+                    </a>
+                    <a href="../index.html">Planes</a>
+                    <a href="Servicios.html" class="especialidadesFooter">Especialidades</a>
+                    <a href="NuestrosProfesionales.html">Nuestros profesionales</a>
+                </div>
+                <!-- INICIO DE SECCIÓN LEGAL -->
+                <div class="footer__columna3 text-md-start text-center col-md-2 col-sm-7 mt-md-0 mt-3">
+                    <a href=" #aquiIriaUnaPaginaDePoliticasDeLaWebPeroAhoraNoPorQueNecesitoUnAbogadoParaHacerlasYSoyEstudiante "
+                        class="politicasDePrivacidad">
+                        <h3>Políticas de privacidad</h3>
+                    </a>
+                    <a
+                        href="http://www.psi.uba.ar/academica/carrerasdegrado/psicologia/sitios_catedras/obligatorias/066_salud2/material/normativas_legislaciones/ley_nacional_23277.pdf">Ley
+                        23.277 del ejercicio profesional de psicología</a>
+                    <a href="http://fepra.org.ar/docs/acerca_fepra/codigo_de_etica_nacional_2013.pdf">Código de
+                        ética</a>
+                    <a class="fepra" href="http://www.fepra.org.ar/feprav3/">Fepra</a>
+                </div>
+                <div class="footer__columna4 text-md-start text-center col-md-2 col-sm-7 mt-md-0 mt-3">
+                    <a href="#notengopreguntasfrecuentesporquenadiepreguntanadaevidentemente">
+                        <h3>Preguntas frecuentes</h3>
+                    </a>
+
+                    <a href="acaesparagentequesequieraunirytrabajar:)">
+                        <h3>¿Éres profesional? ¡Únetenos!</h3>
+                    </a>
+                </div>
+                <!-- INICIO DE REDES SOCIALES DEL FOOTER -->
+                <div class="footer__columna5 align-self-center col-md-2 col-sm-7 mt-md-0 mt-3">
+                    <div>
+                        <a href="https://www.facebook.com/">
+                            <ion-icon name="logo-facebook"></ion-icon>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="https://www.instagram.com/">
+                            <ion-icon name="logo-instagram"></ion-icon>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="https://twitter.com/home">
+                            <ion-icon name="logo-twitter"></ion-icon>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous">
+    </script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>

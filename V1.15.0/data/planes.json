@@ -1,0 +1,16 @@
+[{
+        "nombre": "Consulta Puntual",
+        "info": "Sesión única de 45 minutos aprox. con el profesional que más le convenga (según su disponibilidad)",
+        "precio": 700
+    },
+    {
+        "nombre": "Consulta Bimestral",
+        "info": "Dos sesiones por mes de 45 minutos aprox. cada una con el profesional que más le convenga (según su disponibilidad)",
+        "precio": 1200
+    },
+    {
+        "nombre": "Consulta Semanal",
+        "info": "Una sesión semanal por un mes de 45 minutos aprox. cada una con el profesional que más le convenga (según su disponibilidad)",
+        "precio": 2000
+    }
+]
