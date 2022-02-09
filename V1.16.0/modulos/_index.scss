@@ -14,7 +14,7 @@
 
 .mainIndex__info {
     @include medidas(100%, 60vh);
-    background: url(../../V1.8.0/images/lavandaFondo5.jpg);
+    background: url(images/lavandaFondo5.jpg);
     @include background (no-repeat, cover, 14% 50%);
     color: $blanco;
     display: flex;
@@ -67,7 +67,7 @@
 
     @include medidas(100%, 100%);
     text-align: center;
-    background: url(../../V1.8.0/images/lavandaFondo7.jpg);
+    background: url(images/lavandaFondo7.jpg);
     @include background (no-repeat, cover, 10% 65%);
     display: flex;
     flex-direction: column;

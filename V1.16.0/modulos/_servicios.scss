@@ -3,7 +3,7 @@
 
 
 .mainServicios {
-    background: url(../../V1.8.0/images/lavandaFondo.jpg);
+    background: url(images/lavandaFondo.jpg);
     @include background (no-repeat, cover, 30% 30%);
     display: flex;
     flex-direction: column;
@@ -171,47 +171,47 @@
 
 
 .mainServicios__div--sesionIndividual {
-    background: url(../../V1.8.0/images/terapiaIndividual.jpg);
+    background: url(images/terapiaIndividual.jpg);
     @include background (no-repeat, cover, 50% 50%);
 }
 
 .mainServicios__div--terapiaPareja {
-    background: url(../../V1.8.0/images/terapiaDePareja.jpg);
+    background: url(images/terapiaDePareja.jpg);
     @include background (no-repeat, cover, 50% 50%);
 }
 
 .mainServicios__div--terapiaGrupal {
-    background: url(../../V1.8.0/images/terapiaGrupal.jpg);
+    background: url(images/terapiaGrupal.jpg);
     @include background (no-repeat, cover, 50% 50%);
 }
 
 .mainServicios__div--terapiaSistemica {
-    background: url(../../V1.8.0/images/terapiaSistémica.jpg);
+    background: url(images/terapiaSistémica.jpg);
     @include background (no-repeat, cover, 50% 50%);
 }
 
 .mainServicios__div--neuropsicologia {
-    background: url(../../V1.8.0/images/neuropsicología.jpg);
+    background: url(images/neuropsicología.jpg);
     @include background (no-repeat, cover, 50% 50%);
 }
 
 .mainServicios__div--TerapiaCC {
-    background: url(../../V1.8.0/images/TerapiaCognitivoConductual.jpg);
+    background: url(images/TerapiaCognitivoConductual.jpg);
     @include background (no-repeat, cover, 50% 50%);
 }
 
 .mainServicios__div--TerapiaExistencialHumanista {
-    background: url(../../V1.8.0/images/terapiaExisencial.jpg);
+    background: url(images/terapiaExisencial.jpg);
     @include background (no-repeat, cover, 50% 50%);
 }
 
 .mainServicios__div--TerapiaGestaltica {
-    background: url(../../V1.8.0/images/terapiaGestaltica.jpg);
+    background: url(images/terapiaGestaltica.jpg);
     @include background (no-repeat, cover, 50% 50%);
 }
 
 .mainServicios__div--TerapiaInfantoJuvenil {
-    background: url(../../V1.8.0/images/terapiaJuvenil.jpg);
+    background: url(images/terapiaJuvenil.jpg);
     @include background (no-repeat, cover, 50% 50%);
 }
 

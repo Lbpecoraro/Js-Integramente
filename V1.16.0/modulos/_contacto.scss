@@ -2,7 +2,7 @@
 @import '../utilidades/mediaQueries';
 
 .mainContacto {
-    background: url(../../V1.8.0/images/lavandaFondo6.jpg);
+    background: url(images/lavandaFondo6.jpg);
     @include background (no-repeat, cover, 20% 50%);
     @include medidas(100%, 100%);
     text-align: center;

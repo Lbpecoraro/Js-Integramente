@@ -2,12 +2,12 @@
 @import '../utilidades/mediaQueries';
 
 .mainProfesionales {
-    background: url(../../V1.8.0/images/lavandaFondo.jpg);
+    background: url(images/lavandaFondo.jpg);
     @include background (no-repeat, cover, 50% 80%);
     @include medidas(100%, 100%);
 
     @include miniMobile {
-        background: url(../../V1.8.0/images/lavandas.jpg);
+        background: url(images/lavandas.jpg);
         @include background (no-repeat, cover, 50% 50%);
     }
 }
@@ -181,7 +181,7 @@
 Mujer {
     @for $i from 1 through 4 {
         .profesional__img--profesional#{$genero}#{$i} {
-            background: url('../../V1.8.0/images/profesional#{$genero}#{$i}.jpg');
+            background: url('images/profesional#{$genero}#{$i}.jpg');
             @include background (no-repeat, cover, center);
         }
     }
