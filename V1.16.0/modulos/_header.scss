@@ -1,0 +1,350 @@
+@import '../utilidades/variables';
+@import '../utilidades/mediaQueries';
+
+.header {
+    @include medidas(100%, 15vh);
+    position: sticky;
+    top: 0;
+    z-index: 100000;
+    background: $blanco;
+    box-shadow: 0 5px .5rem $sombra;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 1rem 0 1rem;
+
+    @include tablet {
+        @include medidas(100%, 100%);
+        align-items: flex-start;
+        padding: 0;
+    }
+
+    & .row {
+        width: 100%;
+    }
+}
+
+.header__h1YNav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @include tablet {
+        justify-content: flex-end;
+        align-items: flex-start;
+    }
+}
+
+.header__elH1 {
+    text-decoration: none;
+
+    @include mobile {
+        margin-top: .5rem;
+    }
+
+    & h1 {
+        background: linear-gradient(to top, $lavanda1, $lavandaMuyClaro);
+        -webkit-background-clip: text;
+        color: transparent;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 2.5rem;
+
+        @include mobile {
+            font-size: 2rem;
+        }
+
+        @include miniMobile {
+            font-size: 1.5rem;
+        }
+    }
+}
+
+.header__navbar {
+    width: 100%;
+
+    @include tablet {
+        width: 35%;
+        position: relative;
+        top: 0;
+        left: 0;
+        z-index: 100;
+    }
+}
+
+.header__subMenu {
+    background-color: $blanco;
+    justify-content: center;
+}
+
+.navbar-toggler {
+    @include medidas (5rem, 3rem);
+
+    &:focus {
+        box-shadow: none;
+    }
+
+    & ion-icon {
+        @include medidas(2rem, 2rem);
+        color: $lavandaClaro;
+    }
+}
+
+.header__ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+
+    @include tablet {
+        align-items: flex-start;
+        padding-left: 1rem;
+    }
+
+    & li {
+        font-size: 1.2rem;
+        list-style-type: none;
+        position: relative;
+        border-bottom: 1px solid $transparente;
+        transition: all .4s ease;
+    }
+
+    & li:hover {
+        border-bottom: 1.5px solid $lavanda1;
+
+        @include tablet {
+            border-bottom: 1.5px solid transparent;
+        }
+    }
+
+    & li a:focus {
+        background: linear-gradient(to top, $lavanda1, $lavandaMuyClaro);
+        -webkit-background-clip: text;
+        color: transparent;
+    }
+
+    & li:hover .aGradient {
+        background: linear-gradient(to top, $lavanda1, $lavandaMuyClaro);
+        -webkit-background-clip: text;
+        color: transparent;
+    }
+
+    .aGradient {
+        text-decoration: none;
+        color: $negro;
+        transition: all .5s ease;
+    }
+}
+
+.botonSesionContainer {
+    @include medidas(8rem, 100%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.botonCerrarSesion {
+    background: $lavanda1;
+    border-radius: .2rem;
+    color: $blanco;
+    margin-top: 1rem;
+    padding: .3rem;
+
+    &:hover {
+        background: $lavandaOscuro;
+
+    }
+}
+
+.ocultarCerrarSesion {
+    display: none;
+}
+
+.inicioDeSesion {
+    @include medidas(100%, 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: none;
+    border: none;
+
+    &:focus {
+        box-shadow: none;
+
+    }
+
+    input {
+        background: none;
+        border: none;
+        color: $lavanda1;
+
+    }
+}
+
+.inicioDeSesion__iconContainer {
+    height: 100%;
+    @include medidas(2rem, 2rem);
+    color: $lavanda1;
+    display: flex;
+    justify-content: center;
+
+
+    & ion-icon {
+        @include medidas(2rem, 2rem)
+    }
+}
+
+.msjExitoInicioSesion {
+    position: fixed;
+    top: 45%;
+    left: 40%;
+    background-color: $lavanda1;
+    color: $blanco;
+    border-radius: .5rem;
+    box-shadow: 5px 5px 5px rgb(109, 109, 109);
+    @include medidas (20%, 7%);
+    padding: 1rem;
+    text-align: center;
+}
+
+.formInicioSesion {
+    position: fixed;
+    top: 30%;
+    left: 35%;
+    z-index: 10000;
+    @include medidas (30rem, 15rem);
+    background: linear-gradient(to top, $lavandaMuyClaro, $lavanda1);
+    color: $blanco;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: start;
+    border-radius: .5rem;
+
+    div {
+        @include medidas (100%, 15%);
+        display: flex;
+        justify-content: center;
+    }
+
+    input {
+        @include medidas (90%, 80%);
+        border-radius: .3rem;
+        border: none;
+        padding-left: 0.5rem;
+
+        &:focus {
+            outline: none;
+        }
+    }
+
+    button {
+        font-size: 1.2rem;
+        border: none;
+        background: none;
+
+        &:hover {
+            color: $lavanda1;
+        }
+    }
+}
+
+.ocultarTarjeta {
+    opacity: 1;
+    visibility: hidden;
+}
+
+.userProfile {
+    position: fixed;
+    top: 20%;
+    left: 28%;
+    z-index: 10000;
+    @include medidas (40%, 30%);
+    background: linear-gradient(to top, $lavandaMuyClaro, $lavanda1);
+    color: $blanco;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: .5rem;
+    padding: .5rem;
+    box-shadow: 3px 3px 10px rgb(105, 105, 105);
+}
+
+.profileEmail {
+    font-size: 1.5rem;
+}
+
+.serviciosContratados {
+    @include medidas(100%, 50%);
+    color: $blanco;
+    padding: .2rem;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    overflow-x: auto;
+
+    &::-webkit-scrollbar {
+        background: $lavanda1;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background: $lavandaMuyClaro;
+    }
+
+    .servicioObtenido {
+        @include medidas(100%, 85%);
+        background: $lavandaMuyClaro;
+        margin-right: .4rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        text-align: center;
+    }
+
+    h4 {
+        @include medidas(10rem, 15%);
+        font-size: 1.2rem;
+    }
+
+    h5 {
+        @include medidas(100%, 15%);
+        font-size: 1.1rem;
+    }
+}
+
+
+
+.header__redes {
+    justify-content: center;
+    align-items: center;
+
+    @include tablet {
+        margin-top: .5rem;
+    }
+
+    & a {
+        text-decoration: none;
+        width: 2rem;
+        margin: 0 .5rem;
+    }
+
+    & ion-icon {
+        @include medidas(2rem, 2rem);
+        color: $lavanda1;
+    }
+}
+
+.dropdown-menu {
+    border: none;
+    position: relative;
+}
+
+@include tablet {
+
+    .inicioDeSesion {
+        margin-top: .5rem;
+    }
+}

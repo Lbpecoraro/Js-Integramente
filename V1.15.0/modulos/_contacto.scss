@@ -12,6 +12,29 @@
     justify-content: center;
 }
 
+.msjSuccess {
+    background: $lavanda1;
+    position: absolute;
+    color: $blanco;
+    padding: 1rem;
+    border-radius: .5rem;
+    top: 40%;
+    left: 40%;
+    z-index: 1000;
+}
+
+.msjContactError {
+    width: 50%;
+    background: rgb(255, 113, 113);
+    position: absolute;
+    color: $blanco;
+    padding: 1rem;
+    border-radius: .5rem;
+    top: 40%;
+    left: 25%;
+    z-index: 1000;
+}
+
 .mainContacto__form {
     width: 40%;
     background: $blancoTransparente;

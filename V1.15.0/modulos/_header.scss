@@ -135,10 +135,49 @@
     }
 }
 
+.botonSesionContainer {
+    @include medidas(8rem, 100%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.botonCerrarSesion {
+    background: $lavanda1;
+    border-radius: .2rem;
+    color: $blanco;
+    margin-top: 1rem;
+    padding: .3rem;
+
+    &:hover {
+        background: $lavandaOscuro;
+
+    }
+}
+
+.ocultarCerrarSesion {
+    display: none;
+}
 
 .inicioDeSesion {
+    @include medidas(100%, 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: none;
+    border: none;
+
     &:focus {
         box-shadow: none;
+
+    }
+
+    input {
+        background: none;
+        border: none;
+        color: $lavanda1;
+
     }
 }
 
@@ -146,63 +185,132 @@
     height: 100%;
     @include medidas(2rem, 2rem);
     color: $lavanda1;
+    display: flex;
+    justify-content: center;
+
 
     & ion-icon {
         @include medidas(2rem, 2rem)
     }
 }
 
-.modalInicioDeSesion {
-    margin-top: 15rem;
+.msjExitoInicioSesion {
+    position: fixed;
+    top: 45%;
+    left: 40%;
+    background-color: $lavanda1;
+    color: $blanco;
+    border-radius: .5rem;
+    box-shadow: 5px 5px 5px rgb(109, 109, 109);
+    @include medidas (20%, 7%);
+    padding: 1rem;
+    text-align: center;
+}
 
-    .modal-dialog {
+.formInicioSesion {
+    position: fixed;
+    top: 30%;
+    left: 35%;
+    z-index: 10000;
+    @include medidas (30rem, 15rem);
+    background: linear-gradient(to top, $lavandaMuyClaro, $lavanda1);
+    color: $blanco;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: start;
+    border-radius: .5rem;
+
+    div {
+        @include medidas (100%, 15%);
         display: flex;
         justify-content: center;
     }
 
-    .modal-content {
-        height: 20rem;
-        width: 30rem;
+    input {
+        @include medidas (90%, 80%);
+        border-radius: .3rem;
         border: none;
-        border-radius: 1rem;
-    }
+        padding-left: 0.5rem;
 
-    .modal-body {
-        display: flex;
-        flex-direction: column;
-        height: 100%;
-        background: $lavandaClaro;
-        color: $blanco;
-        border-radius: 1rem;
-    }
-
-    .modalInicioDeSesion__h3 {
-        align-self: center;
-
-    }
-
-    form {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-evenly;
-        height: 100%;
-
-        div {
-            display: flex;
-            flex-direction: column;
+        &:focus {
+            outline: none;
         }
-
     }
 
-    .inicioDeSesion__send {
-        width: 7rem;
-        align-self: flex-end;
-        background: $blanco;
-        color: $lavandaClaro;
+    button {
+        font-size: 1.2rem;
         border: none;
-        border-radius: .5rem;
+        background: none;
+
+        &:hover {
+            color: $lavanda1;
+        }
     }
 }
+
+.ocultarTarjeta {
+    opacity: 1;
+    visibility: hidden;
+}
+
+.userProfile {
+    position: fixed;
+    top: 20%;
+    left: 28%;
+    z-index: 10000;
+    @include medidas (45%, 60%);
+    background: linear-gradient(to top, $lavandaMuyClaro, $lavanda1);
+    color: $blanco;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: .5rem;
+    padding: .5rem;
+    box-shadow: 3px 3px 10px rgb(105, 105, 105);
+}
+
+.serviciosContratados {
+    @include medidas(100%, 50%);
+    color: $blanco;
+    padding: .2rem;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    overflow-x: auto;
+
+    &::-webkit-scrollbar {
+        background: $lavanda1;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background: $lavandaMuyClaro;
+    }
+
+    .servicioObtenido {
+        @include medidas(100%, 85%);
+        background: $lavandaMuyClaro;
+        margin-right: .4rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        text-align: center;
+    }
+
+    h4 {
+        @include medidas(10rem, 15%);
+        font-size: 1.2rem;
+    }
+
+    h5 {
+        @include medidas(100%, 15%);
+        font-size: 1.1rem;
+    }
+}
+
 
 
 .header__redes {

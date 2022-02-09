@@ -1,0 +1,83 @@
+[{
+        "Nombre": "Romina Galvez",
+        "Corriente": "Cognitivo Conductual",
+        "Especialidad": "Trastornos de ansiedad y estrés",
+        "AnosExp": 9,
+        "Matricula": 1111,
+        "Servicios": "Sesión individual, Terapia grupal, Terapia cognitivo conductual, Terapia infanto juvenil",
+        "Img": "profesionalMujer1",
+        "Info": "Licenciada en psicología recibida en la Universidad Católica Argentina, diplomada en Terapia Cognitivo Comportamental de los Trastornos Psicológicos. He trabajado en distintas instituciones clínicas, principalmente con adolescentes y adultos. Mi enfoque se basa en la colaboración mutua entre psicólogo paciente para que este pueda sentirse más tranquilo y seguro en su día a día."
+
+    },
+    {
+        "Nombre": "Antonio Ferrer",
+        "Corriente": "Psicología integrativa",
+        "Especialidad": "Psicología educativa",
+        "AnosExp": 7,
+        "Matricula": 2222,
+        "Servicios": "Terapia grupal, Terapia infanto juvenil, Terapia gestaltica",
+        "Img": "profesionalHombre1",
+        "Info": "Licenciado en psicología con experiencia docente de 15 años, graduado en la Universidad de Congreso hace 7 años, siempre me he dedicado a la docencia y a la educación y desde que me gradué ha sido mi foco principal. Creo que cada persona es diferente y por eso su manera de aprender lo es también, por lo que mi forma de abordar sus dificultades son completamente personalizadas a cada uno"
+    },
+    {
+        "Nombre": "Marisa Fernández",
+        "Corriente": "Neurocognitiva",
+        "Especialidad": "Neuropsicología",
+        "AnosExp": 5,
+        "Matricula": 3333,
+        "Servicios": "Sesión individual, Neuropsicología, Terapia cognitivo conductual",
+        "Img": "profesionalMujer2",
+        "Info": "Profesional psicóloga recibida en la universidad Favaloro, especializada en la rama de las neurociencias. Especialista en psicodiagnósticos y evaluaciones neurocognitivas, mi trabajo se encuentra más dedicado a las funciones cognitivas y neuronales, tales como la atención, memoria, el aprendizaje, la percepción, lenguaje, el pensamiento, o las funciones ejecutivas, entre otros."
+    },
+    {
+        "Nombre": "Javier Antequera",
+        "Corriente": "sistémica",
+        "Especialidad": "Parejas",
+        "AnosExp": 2,
+        "Matricula": 4444,
+        "Servicios": "Sesión individual, Terapia de pareja, Terapia grupal, Terapia sistémica",
+        "Img": "profesionalHombre2",
+        "Info": "Licenciado en psicología de la universidad de Buenos Aires. Me dedico desde el pensamiento sitémico a atender principalmente parejas, aunque también hago terapias grupales y familiares. comprendo que cada consultante y/o paciente tiene sus particularidades, sus necesidades, sus demandas, por lo que cada proceso debe configurarse respondiendo a esto y llegando a un punto medio entre quienes forman parte del sistema."
+    },
+    {
+        "Nombre": "Emilia Villegas",
+        "Corriente": "Existencial Humanísta",
+        "Especialidad": "Crisis vitales",
+        "AnosExp": 9,
+        "Matricula": 5555,
+        "Servicios": "Sesión individual, Terapia grupal, Terapia existencial humanística",
+        "Img": "profesionalMujer3",
+        "Info": "Psicóloga recibida de la Universidad del Aconcagua. Me he dedicado casi toda mi carrera a atender crisis vitales, tales como duelos, pérdidas, separaciones, situaciones traumáticas, o quizas solamente ayudar al paciente a encontrar su propio camino en su vida para poder darle significado."
+    },
+    {
+        "Nombre": "Lautaro Ponce",
+        "Corriente": "Existencial Humanísta",
+        "Especialidad": "Gerontolgía",
+        "AnosExp": 8,
+        "Matricula": 6666,
+        "Servicios": "Sesión individual, Terapia Grupal, Terapia existencial humanística",
+        "Img": "profesionalHombre3",
+        "Info": "Psicólogo licenciado en la universidad de Córdoba, con maestrías en geróntología, desarrollo, terapia a pacientes matores, dedicado a los procesos de envejecimiento a lo largo del ciclo vital, promoviendo el bienestar y una buena calidad de vida para las personas mayores y su entorno."
+    },
+    {
+        "Nombre": "Alexandra Coria",
+        "Corriente": "Sistémica",
+        "Especialidad": "Sexología",
+        "AnosExp": 6,
+        "Matricula": 7777,
+        "Servicios": "Sesión individual, Terapia de pareja, Terapia grupal, Terapia sistémica, Terapia infanto juvenil",
+        "Img": "profesionalMujer4",
+        "Info": "Psicóloga clínica graduada en la universidad de Mendoza, con maestrías en sexología, psicología integrativa, perspectiva de género... Principalmente me dedico individualmente o en parejas a tratar situaciones conflictivas en la vida sexual de las personas. Algunos casos requieren la combinación de las técnicas de la terapia sexual con un enfoque más amplio que trabaje sobre otros aspectos de la personalidad."
+    },
+    {
+        "Nombre": "José Luis Araya",
+        "Corriente": "Cognitivista evolutiva",
+        "Especialidad": "infanto-Juvenil",
+        "AnosExp": 11,
+        "Matricula": 8888,
+        "Servicios": "Sesión individual, Terapia grupal, Terapia cognitivo conductual, Terapia infanto juvenil",
+        "Img": "profesionalHombre4",
+        "Info": "Graduado de la universidad de Palermo, doctor en psicología, estudié la maestría en infanto juvenil en la Universidad de Valencia. Aplico estrategias de intervención y habilidades terapéuticas para abordar las necesidades infanto-juveniles desde el periodo perinatal hasta la adolescencia. Cuento con técnicas para el entrenamiento y la mejora del rol de padres, tutores legales y familiares ajustadas a las necesidades de cada caso, pues su participación es clave para un tratamiento adecuado y eficaz."
+    }
+
+]

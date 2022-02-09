@@ -149,9 +149,9 @@
 
 .planElegido {
     background: $blanco;
-    @include medidas(30%, 40%);
+    @include medidas(40%, 70%);
     position: fixed;
-    top: 30%;
+    top: 20%;
     z-index: 1000;
     padding: 2rem;
     display: flex;
@@ -272,6 +272,7 @@
 
 }
 
+
 .msjContratado {
     position: fixed;
     top: 40%;
@@ -290,4 +291,219 @@
     opacity: 0;
     visibility: hidden;
 
+}
+
+
+.tarjetaPlan {
+
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    background-color: $casiBlanco;
+    box-shadow: 2px 2px 10px rgb(58, 58, 58);
+    top: 30%;
+    left: 35%;
+    color: $negro;
+    padding: 1.5rem;
+    border-radius: .5rem;
+    @include medidas(30%, 50%);
+    justify-content: space-around;
+    align-items: center;
+    z-index: 100000;
+
+    div {
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+
+    }
+}
+
+
+.btnContratar2 {
+    background: none;
+    border: none;
+    font-size: 2rem;
+    font-weight: lighter;
+
+    &:hover {
+        background: linear-gradient(to top, $lavanda1, $lavandaMuyClaro);
+        -webkit-background-clip: text;
+        color: transparent;
+    }
+}
+
+.botonCerrar2 {
+    background: none;
+    border: none;
+    font-size: 2rem;
+    font-weight: lighter;
+
+    &:hover {
+        background: linear-gradient(to top, rgb(109, 0, 0), rgb(253, 36, 36));
+        -webkit-background-clip: text;
+        color: transparent;
+    }
+}
+
+.msjErrorSesion {
+    position: fixed;
+    top: 40%;
+    left: 37%;
+    @include medidas (25%, 15%);
+    background: rgb(252, 86, 100);
+    color: $blanco;
+    border-radius: 1rem;
+    box-shadow: 5px 5px 10px $gris;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    z-index: 100001;
+}
+
+.msjErrorInicioSesion {
+    position: fixed;
+    top: 40%;
+    left: 37%;
+    @include medidas (25%, 15%);
+    background: rgb(252, 86, 100);
+    color: $blanco;
+    border-radius: 1rem;
+    box-shadow: 5px 5px 10px $gris;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    z-index: 100001;
+}
+
+
+//CALENDARIO STYLE
+/*
+	Stylesheet for Tigra Calendar v5.0
+	Product is Public Domain (Free for any kind of applicaiton, customization and derivative works are allowed) 
+	URL: http://www.softcomplex.com/products/tigra_calendar/
+
+	- all image paths are relative to path of stylesheet
+	- the styles below can be moved into the document or in existing stylesheet
+
+*/
+
+/* input box in default state */
+.tcalInput {
+    background: url('img/cal.gif') 100% 50% no-repeat;
+    padding-right: 20px;
+    cursor: pointer;
+}
+
+/* additional properties for input boxe in activated state, above still applies unless in conflict */
+.tcalActive {
+    background-image: url('img/no_cal.gif');
+}
+
+/* container of calendar's pop-up */
+#tcal {
+    position: fixed;
+    visibility: hidden;
+    z-index: 100000;
+    width: 170px;
+    background-color: white;
+    margin-top: 2px;
+    padding: 0 2px 2px 2px;
+    border: 1px solid silver;
+
+    -moz-box-shadow: 3px 3px 4px silver;
+    -webkit-box-shadow: 3px 3px 4px silver;
+    box-shadow: 3px 3px 4px silver;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='silver')";
+    filter: progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='silver');
+}
+
+/* table containing navigation and current month */
+#tcalControls {
+    border-collapse: collapse;
+    border: 0;
+    width: 100%;
+}
+
+#tcalControls td {
+    border-collapse: collapse;
+    border: 0;
+    padding: 0;
+    width: 16px;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+
+#tcalControls th {
+    border-collapse: collapse;
+    border: 0;
+    padding: 0;
+    line-height: 25px;
+    font-size: 10px;
+    text-align: center;
+    font-family: Tahoma, Geneva, sans-serif;
+    font-weight: bold;
+    white-space: nowrap;
+}
+
+#tcalPrevYear {
+    background-image: url('img/prev_year.gif');
+}
+
+#tcalPrevMonth {
+    background-image: url('img/prev_mon.gif');
+}
+
+#tcalNextMonth {
+    background-image: url('img/next_mon.gif');
+}
+
+#tcalNextYear {
+    background-image: url('img/next_year.gif');
+}
+
+/* table containing week days header and calendar grid */
+#tcalGrid {
+    border-collapse: collapse;
+    border: 1px solid silver;
+    width: 100%;
+}
+
+#tcalGrid th {
+    border: 1px solid silver;
+    border-collapse: collapse;
+    padding: 3px 0;
+    text-align: center;
+    font-family: Tahoma, Geneva, sans-serif;
+    font-size: 10px;
+    background-color: gray;
+    color: white;
+}
+
+#tcalGrid td {
+    border: 0;
+    border-collapse: collapse;
+    padding: 2px 0;
+    text-align: center;
+    font-family: Tahoma, Geneva, sans-serif;
+    width: 14%;
+    font-size: 11px;
+    cursor: pointer;
+}
+
+#tcalGrid td.tcalOtherMonth {
+    color: silver;
+}
+
+#tcalGrid td.tcalWeekend {
+    background-color: #ACD6F5;
+}
+
+#tcalGrid td.tcalToday {
+    border: 1px solid red;
+}
+
+#tcalGrid td.tcalSelected {
+    background-color: #FFB3BE;
 }

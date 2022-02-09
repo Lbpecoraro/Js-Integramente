@@ -1,0 +1,284 @@
+@import '../utilidades/variables';
+@import '../utilidades/mediaQueries';
+
+
+.mainServicios {
+    background: url(../../V1.8.0/images/lavandaFondo.jpg);
+    @include background (no-repeat, cover, 30% 30%);
+    display: flex;
+    flex-direction: column;
+    @include medidas(100%, 100%);
+    padding: 2rem;
+}
+
+.mainServicios__cantidad,
+.mainServicios__especialidad {
+    @include medidas(100%, 50%);
+    padding: 2rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+
+    & h2 {
+
+        color: $lavanda1;
+        margin-bottom: 1.5rem;
+    }
+}
+
+.mainServicios__contenedor1,
+.mainServicios__contenedor2 {
+    height: 100%;
+
+    & .row {
+        @include medidas(100%, 100%);
+    }
+
+    .mainServicios__div {
+        height: 20rem;
+        overflow: hidden;
+        position: relative;
+        border-radius: 1rem;
+        transition: all .3s ease;
+    }
+
+    .mainServicios__div:hover {
+        transform: scale(1.05, 1.05);
+    }
+
+    & h3 {
+        width: 100%;
+        position: absolute;
+        z-index: 200;
+        bottom: 0;
+        font-family: "Roboto", sans-serif;
+        font-size: 1.5rem;
+        color: $casiBlanco;
+        text-align: center;
+        bottom: 0;
+        background: $lavandaOscuroTransparente;
+        margin: 0;
+        transition: all .3s ease;
+    }
+
+    .mainServicios__div:hover>h3 {
+        background: $lavanda1;
+    }
+}
+
+.mainServicios__modalServicios {
+    &:focus {
+        box-shadow: none;
+    }
+}
+
+.modalServicio {
+
+    position: fixed;
+    top: 20%;
+    left: 15%;
+    z-index: 10000;
+    width: 65%;
+
+    .modal-dialog {
+        display: flex;
+        justify-content: center;
+        max-width: 55rem;
+
+        @include tablet {
+            margin-top: 20%;
+            max-width: 50rem;
+        }
+
+        @include mobile {
+            margin-top: 20%;
+            max-width: 45rem;
+        }
+
+        @include miniMobile {
+            margin-top: 10%;
+            max-width: 40rem;
+            padding: 0;
+        }
+    }
+
+    .modal-content {
+        width: 100%;
+        border: none;
+        background: linear-gradient(to top, $lavanda1, $lavandaMuyClaro);
+        border-radius: .5rem;
+
+        @include miniMobile {
+            width: 75%;
+        }
+    }
+
+    .modal-body {
+        width: 100%;
+
+    }
+}
+
+.tarjetaServicio {
+    flex-direction: row;
+    border-radius: .5rem;
+    border: none;
+    overflow: hidden;
+    background: linear-gradient(to top, $lavanda1, $lavandaClaro);
+    color: $blanco;
+    font-size: 1.15rem;
+
+    h5 {
+        text-align: center;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 2.5rem;
+
+        @include miniMobile {
+            font-size: 2rem;
+        }
+    }
+
+    .tarjetaServicio__info {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .list-group-item {
+        background: transparent;
+        color: $blanco;
+    }
+
+
+    .btn {
+        color: $blanco;
+        background: $lavandaClaro;
+        align-self: flex-end;
+        margin: 0 .5rem .5rem 0;
+        border-radius: .5rem;
+        font-size: 1.5rem;
+
+        &:hover {
+            background: $lavandaOscuro;
+        }
+
+        &:focus {
+            box-shadow: none;
+        }
+    }
+}
+
+
+.mainServicios__div--sesionIndividual {
+    background: url(../../V1.8.0/images/terapiaIndividual.jpg);
+    @include background (no-repeat, cover, 50% 50%);
+}
+
+.mainServicios__div--terapiaPareja {
+    background: url(../../V1.8.0/images/terapiaDePareja.jpg);
+    @include background (no-repeat, cover, 50% 50%);
+}
+
+.mainServicios__div--terapiaGrupal {
+    background: url(../../V1.8.0/images/terapiaGrupal.jpg);
+    @include background (no-repeat, cover, 50% 50%);
+}
+
+.mainServicios__div--terapiaSistemica {
+    background: url(../../V1.8.0/images/terapiaSistémica.jpg);
+    @include background (no-repeat, cover, 50% 50%);
+}
+
+.mainServicios__div--neuropsicologia {
+    background: url(../../V1.8.0/images/neuropsicología.jpg);
+    @include background (no-repeat, cover, 50% 50%);
+}
+
+.mainServicios__div--TerapiaCC {
+    background: url(../../V1.8.0/images/TerapiaCognitivoConductual.jpg);
+    @include background (no-repeat, cover, 50% 50%);
+}
+
+.mainServicios__div--TerapiaExistencialHumanista {
+    background: url(../../V1.8.0/images/terapiaExisencial.jpg);
+    @include background (no-repeat, cover, 50% 50%);
+}
+
+.mainServicios__div--TerapiaGestaltica {
+    background: url(../../V1.8.0/images/terapiaGestaltica.jpg);
+    @include background (no-repeat, cover, 50% 50%);
+}
+
+.mainServicios__div--TerapiaInfantoJuvenil {
+    background: url(../../V1.8.0/images/terapiaJuvenil.jpg);
+    @include background (no-repeat, cover, 50% 50%);
+}
+
+.tarjetaPlanServicios {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    background-color: $casiBlanco;
+    box-shadow: 2px 2px 10px rgb(58, 58, 58);
+    top: 30%;
+    left: 35%;
+    color: $negro;
+    padding: 1.5rem;
+    border-radius: .5rem;
+    @include medidas(30%, 50%);
+    justify-content: space-around;
+    align-items: center;
+    z-index: 100000;
+}
+
+.detalleContratoServicio {
+
+    position: fixed;
+    top: 30%;
+    left: 30%;
+    @include medidas (35%, 60%);
+    background: $lavanda1;
+    color: $blanco;
+    border-radius: 1rem;
+    box-shadow: 5px 5px 10px $gris;
+    padding: 1.2rem;
+    text-align: start;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    z-index: 100001;
+
+    h2 {
+        @include medidas(100%, 20%);
+    }
+
+    p {
+        @include medidas(100%, 20%);
+        margin-top: 1rem;
+        font-size: 1.5rem;
+    }
+
+    h3 {}
+
+    div {
+        @include medidas(100%, 100%);
+
+        h4,
+        h5,
+        p,
+        span {
+            font-size: 1.5rem;
+            font-weight: 600;
+
+        }
+
+        .elSpan {
+            font-size: 1.2rem;
+            font-weight: 300;
+        }
+    }
+
+
+}

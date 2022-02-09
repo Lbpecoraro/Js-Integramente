@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Tu salud mental es nuestra prioridad, por eso queremos informarte acerca de nuestros servicios y ramas que podemos ofrecerte para mejorar tu calidad de vida.">
+    <meta name="keywords"
+        content="psicólogos, psicología, terapia, salud-mental, trastornos-mentales, ramas-de-psicología, especialidades-de-psicología, terapia-de-familia, terapia-de-pareja, Neuropsicología">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <link rel="stylesheet" href="../style.css">
+    <title>Servicios | Integramente</title>
+</head>
+
+<body>
+    <header class="header container-fluid">
+        <div class="row justify-content-between flex-row-reverse flex-lg-row">
+            <div class="header__h1YNav col-lg-8 col-12 flex-row-reverse flex-lg-row">
+                <a class="header__elH1" href="../index.html">
+                    <h1 class="my-0 ms-0 me-sm-5 ">INTEGRAMENTE</h1>
+                </a>
+                <nav class="navbar navbar-expand-lg header__navbar p-0">
+                    <div class="container-fluid p-0">
+                        <button class="navbar-toggler p-0" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                            aria-label="Toggle navigation">
+                            <ion-icon name="menu-outline"></ion-icon>
+                        </button>
+                        <div class="collapse navbar-collapse header__subMenu" id="navbarNavDropdown">
+                            <ul class="navbar-nav header__ul">
+                                <button type="button" class="btn inicioDeSesion  d-block d-lg-none col-lg-1"
+                                    data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                    <div class="inicioDeSesion__iconContainer ">
+                                        <ion-icon name="person-outline"></ion-icon>
+                                    </div>
+                                </button>
+                                <li class="nav-item">
+                                    <a class="aGradient nav-link active" aria-current="page"
+                                        href="../index.html">Home</a>
+
+                                <li class="nav-item">
+                                    <a class="aGradient nav-link" href="Servicios.html">Servicios</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="aGradient nav-link" href="NuestrosProfesionales.html">Profesionales</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="aGradient nav-link" href="Contacto.html">Contacto</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+
+            <!-- Button trigger modal -->
+            <div class="botonSesionContainer">
+                <button type="button" class="inicioDeSesion" id="inicioDeSesion">
+                    <div class="inicioDeSesion__iconContainer ">
+                        <ion-icon name="person-outline"></ion-icon>
+                    </div>
+                    <input id="botonNombreInicioSesion" type="button" value="Inicia sesión">
+                </button>
+            </div>
+
+            <!-- Acá van las redes sociales -->
+            <div class="header__redes d-lg-flex d-none col-lg-1">
+                <a href="https://www.facebook.com/">
+                    <ion-icon class="m-0" name="logo-facebook"></ion-icon>
+                </a>
+                <a href="https://www.instagram.com/">
+                    <ion-icon class="m-0" name="logo-instagram"></ion-icon>
+                </a>
+                <a href="https://twitter.com/home">
+                    <ion-icon class="m-0" name="logo-twitter"></ion-icon>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Modal -->
+    <form class="formInicioSesion ocultarTarjeta" id="formInicioSesion">
+        <h2>Bienvenid@ a Integramente</h2>
+        <div class="">
+            <input type="text" id="usuarioInicioSesion" placeholder="Nombre de usuario">
+        </div>
+        <div class="">
+            <input type="email" id="emailInicioSesion" placeholder="Correo electrónico">
+        </div>
+        <div id="emailHelp">Tu privacidad esta a salvo con nosotros</div>
+        <div class="">
+            <input type="password" id="passwordInicioSesion" placeholder="Contraseña">
+        </div>
+        <button id="btnInicioSesion" type="submit" class="">Iniciar Sesión</button>
+    </form>
+
+    <!-- Modal perfil del usuario -->
+
+    <div class="userProfile ocultarTarjeta" id="userProfile">
+        <h3 class="profileName" id="profileName"></h3>
+        <p class="profileEmail" id="profileEmail"></p>
+        <div id="botonCerrarSesion" class="botonCerrarSesion">
+            <span>
+                Cerrar sesión
+            </span>
+        </div>
+    </div>
+
+    <div class="tarjetaPlanServicios oculto" id="tarjetaPlanServicios">
+        <h3>Servicio: <span></span></h3>
+        <p>Selecciona tu plan, puedes obtener más información sobre estos en nuestro home</p>
+        <select class="planServicio" name="" id="planServicio">
+            <option value="Consulta puntual">Consulta puntual $700</option>
+            <option value="Consulta Bimestral">Consulta Bimestral $1200</option>
+            <option value="Consulta semanal">Consulta semanal $2000</option>
+        </select>
+        <p>Ahora selecciona tu profesional, puedes obtener información sobre ellos en nuestra pestaña "profesionales"
+        </p>
+        <select class="profesionalContratar" name="" id="profesionalContratar">
+            <option value="Romina Galvez">Romina Galvez</option>
+            <option value="Antonio Ferrer">Antonio Ferrer</option>
+            <option value="Marisa Fernández">Marisa Fernández</option>
+            <option value="Javier Antequera">Javier Antequera</option>
+            <option value="Emilia Villegas">Emilia Villegas</option>
+            <option value="Lautaro Ponce">Lautaro Ponce</option>
+            <option value="Alexandra Coria">Alexandra Coria</option>
+            <option value="José Luis Araya">José Luis Araya</option>
+        </select>
+
+        <div id="calendar" class="calendar">
+            <form action="#">
+                <!-- add class="tcal" to your input field -->
+                <div><input type="text" name="date" class="tcal" value="" /></div>
+            </form>
+        </div>
+        <select class="horariosServicios" name="" id="horariosServicios">
+            <option value="09:00am-09:45am">09:00am-09:45am</option>
+            <option value="10:00am-10:45am">10:00am-10:45am</option>
+            <option value="11:00am-11:45am">11:00am-11:45am</option>
+            <option value="12:00pm-12:45pm">12:00pm-12:45pm</option>
+            <option value="13:00pm-13:45pm">13:00pm-13:45pm</option>
+            <option value="14:00pm-14:45pm">14:00pm-14:45pm</option>
+            <option value="15:00pm-15:45pm">15:00pm-15:45pm</option>
+            <option value="16:00pm-16:45pm">16:00pm-16:45pm</option>
+            <option value="17:00pm-17:45pm">17:00pm-17:45pm</option>
+        </select>
+        <div>
+            <input type="button" id="btnContratar3" class="planElegido__contratar3 btnContratar3" value="Contratar">
+            <input type="button" id="botonCerrar3" class="planElegido__botonCerrar3 botonCerrar3" value="Cerrar">
+        </div>
+    </div>
+
+    <form class="row tarjeta justify-content-between align-items-center oculto" id="tarjeta1">
+        <h3>Ingresa la información de tu tarjeta</h3>
+        <div class="numeroTarjeta col-12"><input placeholder="Número" type="number" name="" id="cardNumber1"></div>
+        <div class="codigoTarjeta col-5"><input placeholder="Ingresa el código de seguridad" type="number" name=""
+                id="cardCode1"></div>
+        <div class="vencimientoTarjeta col-5"><input placeholder="Mes/Año de vencimiento" type="number" name=""
+                id="cardExpiration1"></div>
+        <div class="DNI col-12"><input placeholder="Ingresa tu Número de DNI" type="number" name="" id="DNI1"></div>
+
+        <input type="submit" value="Adquirir" class="btnComprar col-5" id="btnComprar1">
+        <input type="button" value="Cancelar" class="btnCancelar col-5" id="btnCancelar1">
+    </form>
+
+    <main id="mainServicios" class="mainServicios">
+
+        <section class="mainServicios__cantidad">
+            <h2>Según cantidad</h2>
+            <div class="mainServicios__contenedor1 container-fluid">
+                <div id="serviciosCantidadContainer" class="row gap-3 justify-content-around m-0">
+
+                </div>
+            </div>
+        </section>
+        <section class="mainServicios__especialidad">
+            <h2>Según especialidad</h2>
+            <div class="mainServicios__contenedor2 container-fluid">
+                <div id="serviciosEspecialidadContainer" class="row gap-3 justify-content-around m-0">
+
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="container-fluid">
+            <div
+                class="footer__secciones row justify-content-md-between justify-content-center text-md-start text-center">
+                <h2 class="footer__columna1 col-md-4 align-self-center col-sm-7 mt-md-0 mt-3">INTEGRAMENTE</h2>
+                <div class="footer__columna2 text-md-start text-center col-md-2 col-sm-7 mt-md-0 mt-3">
+                    <a href="Servicios.html">
+                        <h3>Servicios</h3>
+                    </a>
+                    <a href="../index.html">Planes</a>
+                    <a href="Servicios.html" class="especialidadesFooter">Especialidades</a>
+                    <a href="NuestrosProfesionales.html">Nuestros profesionales</a>
+                </div>
+                <!-- INICIO DE SECCIÓN LEGAL -->
+                <div class="footer__columna3 text-md-start text-center col-md-2 col-sm-7 mt-md-0 mt-3">
+                    <a href=" #aquiIriaUnaPaginaDePoliticasDeLaWebPeroAhoraNoPorQueNecesitoUnAbogadoParaHacerlasYSoyEstudiante "
+                        class="politicasDePrivacidad">
+                        <h3>Políticas de privacidad</h3>
+                    </a>
+                    <a
+                        href="http://www.psi.uba.ar/academica/carrerasdegrado/psicologia/sitios_catedras/obligatorias/066_salud2/material/normativas_legislaciones/ley_nacional_23277.pdf">Ley
+                        23.277 del ejercicio profesional de psicología</a>
+                    <a href="http://fepra.org.ar/docs/acerca_fepra/codigo_de_etica_nacional_2013.pdf">Código de
+                        ética</a>
+                    <a class="fepra" href="http://www.fepra.org.ar/feprav3/">Fepra</a>
+                </div>
+                <div class="footer__columna4 text-md-start text-center col-md-2 col-sm-7 mt-md-0 mt-3">
+                    <a href="#notengopreguntasfrecuentesporquenadiepreguntanadaevidentemente">
+                        <h3>Preguntas frecuentes</h3>
+                    </a>
+
+                    <a href="acaesparagentequesequieraunirytrabajar:)">
+                        <h3>¿Éres profesional? ¡Únetenos!</h3>
+                    </a>
+                </div>
+                <!-- INICIO DE REDES SOCIALES DEL FOOTER -->
+                <div class="footer__columna5 align-self-center col-md-2 col-sm-7 mt-md-0 mt-3">
+                    <div>
+                        <a href="https://www.facebook.com/">
+                            <ion-icon name="logo-facebook"></ion-icon>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="https://www.instagram.com/">
+                            <ion-icon name="logo-instagram"></ion-icon>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="https://twitter.com/home">
+                            <ion-icon name="logo-twitter"></ion-icon>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="../JS/JQuery.js"></script>
+    <script type="text/javascript" src="../JS/tcal.js"></script>
+    <script src="../JS/elements.js"></script>
+    <script src="../JS/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous">
+    </script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>

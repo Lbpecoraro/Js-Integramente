@@ -60,41 +60,19 @@
                     </div>
                 </nav>
             </div>
+
             <!-- Button trigger modal -->
-            <button type="button" class="btn inicioDeSesion  d-none d-lg-block col-lg-1" data-bs-toggle="modal"
-                data-bs-target="#exampleModal">
-                <div class="inicioDeSesion__iconContainer ">
-                    <ion-icon name="person-outline"></ion-icon>
-                </div>
-            </button>
-
-            <!-- Modal -->
-            <div class="modal  fade modalInicioDeSesion" id="exampleModal" tabindex="-1"
-                aria-labelledby="exampleModalLabel" aria-hidden="true">
-                <div class="modal-dialog">
-                    <div class="modal-content">
-
-                        <div class="modal-body">
-
-                            <h3 class="modalInicioDeSesion__h3"> Bienvenid@s a Integramente</h3>
-                            <form action="">
-                                <div>
-                                    <label for="email">Correo electrónico</label>
-                                    <input class="modalInicioDeSesion__email" type="email" name="email" id=""
-                                        placeholder="Ingrese su correo electrónico">
-                                </div>
-                                <div>
-                                    <label for="password">Contraseña</label>
-                                    <input type="password" class="modalInicioDeSesion__password"
-                                        placeholder="Ingrese su contraseña" name="password">
-                                </div>
-                                <input class="inicioDeSesion__send" type="submit" value="Iniciar sesión">
-                            </form>
-                        </div>
-
+            <div class="botonSesionContainer">
+                <button type="button" class="inicioDeSesion" id="inicioDeSesion">
+                    <div class="inicioDeSesion__iconContainer ">
+                        <ion-icon name="person-outline"></ion-icon>
                     </div>
-                </div>
+                    <input id="botonNombreInicioSesion" type="button" value="Inicia sesión">
+                </button>
             </div>
+
+
+
             <!-- Acá van las redes sociales -->
             <div class="header__redes d-lg-flex d-none col-lg-1">
                 <a href="https://www.facebook.com/">
@@ -109,6 +87,63 @@
             </div>
         </div>
     </header>
+
+    <!-- Modal -->
+    <form class="formInicioSesion ocultarTarjeta" id="formInicioSesion">
+        <h2>Bienvenid@ a Integramente</h2>
+        <div class="">
+            <input type="text" id="usuarioInicioSesion" placeholder="Nombre de usuario">
+        </div>
+        <div class="">
+            <input type="email" id="emailInicioSesion" placeholder="Correo electrónico">
+        </div>
+        <div id="emailHelp">Tu privacidad esta a salvo con nosotros</div>
+        <div class="">
+            <input type="password" id="passwordInicioSesion" placeholder="Contraseña">
+        </div>
+        <button id="btnInicioSesion" type="submit" class="">Iniciar Sesión</button>
+    </form>
+
+    <!-- Modal perfil del usuario -->
+    <div class="userProfile ocultarTarjeta" id="userProfile">
+        <h3 class="profileName" id="profileName"></h3>
+        <div class="serviciosContratados" id="serviciosContratados">
+            <div class="servicioObtenido" id="servicioObtenido">
+                <h4>Nombre del servicio</h4>
+                <h5>Nombre del profesional</h5>
+            </div>
+            <div class="servicioObtenido" id="servicioObtenido">
+                <h4>Nombre del servicio</h4>
+                <h5>Nombre del profesional</h5>
+            </div>
+            <div class="servicioObtenido" id="servicioObtenido">
+                <h4>Nombre del servicio</h4>
+                <h5>Nombre del profesional</h5>
+            </div>
+            <div class="servicioObtenido" id="servicioObtenido">
+                <h4>Nombre del servicio</h4>
+                <h5>Nombre del profesional</h5>
+            </div>
+            <div class="servicioObtenido" id="servicioObtenido">
+                <h4>Nombre del servicio</h4>
+                <h5>Nombre del profesional</h5>
+            </div>
+            <div class="servicioObtenido" id="servicioObtenido">
+                <h4>Nombre del servicio</h4>
+                <h5>Nombre del profesional</h5>
+            </div>
+            <div class="servicioObtenido" id="servicioObtenido">
+                <h4>Nombre del servicio</h4>
+                <h5>Nombre del profesional</h5>
+            </div>
+        </div>
+        <div id="botonCerrarSesion" class="botonCerrarSesion">
+            <span>
+                Cerrar sesión
+            </span>
+        </div>
+    </div>
+
     <main class="mainBlog">
         <section class="mainBlog__sectionAdvertencia">
 
@@ -255,6 +290,9 @@
             </div>
         </div>
     </footer>
+    <script src="../JS/JQuery.js"></script>
+    <script src="../JS/elements.js"></script>
+    <script src="../JS/main.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous">
     </script>

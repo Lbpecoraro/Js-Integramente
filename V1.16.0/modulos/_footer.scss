@@ -1,0 +1,62 @@
+@import '../utilidades/variables';
+@import '../utilidades/mediaQueries';
+
+.footer {
+    @include medidas(100%, 100%);
+    background: linear-gradient(to right, $lavandaClaro, $lavandaOscuro);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 1rem 0;
+
+    & h3 {
+        font-size: 1.1rem;
+    }
+
+    & h3:hover,
+    a:hover {
+        color: $blanco;
+    }
+
+    & div {
+        text-align: left;
+    }
+
+    & div a {
+        text-decoration: none;
+        color: $blanco;
+    }
+
+    & :nth-child(3) a {
+        display: block;
+    }
+}
+
+.footer__columna1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2rem;
+    color: $casiBlanco;
+}
+
+.footer__columna2 {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer__columna5 {
+    & div {
+        padding-top: 0;
+        display: flex;
+        justify-items: center;
+    }
+
+    & ion-icon {
+        color: $blanco;
+        @include medidas(2rem, 2rem);
+    }
+
+    @include mobile {
+        display: flex;
+        justify-content: space-evenly;
+    }
+}

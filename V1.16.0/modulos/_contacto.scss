@@ -1,0 +1,130 @@
+@import '../utilidades/variables';
+@import '../utilidades/mediaQueries';
+
+.mainContacto {
+    background: url(../../V1.8.0/images/lavandaFondo6.jpg);
+    @include background (no-repeat, cover, 20% 50%);
+    @include medidas(100%, 100%);
+    text-align: center;
+    padding: 2rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.msjSuccess {
+    background: $lavanda1;
+    position: fixed;
+    color: $blanco;
+    padding: 1rem;
+    border-radius: .5rem;
+    top: 40%;
+    left: 40%;
+    z-index: 1000;
+}
+
+.msjContactError {
+    width: 50%;
+    background: rgb(255, 113, 113);
+    position: fixed;
+    color: $blanco;
+    padding: 1rem;
+    border-radius: .5rem;
+    top: 40%;
+    left: 25%;
+    z-index: 1000;
+}
+
+.mainContacto__form {
+    width: 40%;
+    background: $blancoTransparente;
+    border-radius: 2rem;
+    box-shadow: 5px 5px .5rem $sombra;
+    padding: 1rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    @include tablet {
+        width: 70%;
+    }
+}
+
+.mainContacto__titulo {
+    color: $lavanda1;
+
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.5rem;
+}
+
+.mainContacto__datos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    & div {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        align-items: flex-start;
+    }
+
+    & label {
+        font-family: 'Montserrat', sans-serif;
+        font-size: 1.2rem;
+        font-weight: 700;
+    }
+
+    & input {
+        width: 100%;
+        padding-left: .3rem;
+        border: none;
+        border-radius: .4rem;
+        box-shadow: 2px 2px 5px $sombra;
+    }
+}
+
+.mainContacto__mensaje {
+    & textarea {
+        width: 100%;
+        padding-left: .3rem;
+        border: none;
+        border-radius: .4rem;
+        margin-top: .5rem;
+        box-shadow: 2px 2px 5px $sombra;
+    }
+}
+
+.mainContacto__terminosYCondiciones {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin: .5rem 0;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    font-weight: 700;
+
+    label {
+        margin-right: .5rem;
+    }
+}
+
+.mainContacto__botones {
+    display: flex;
+    justify-content: space-around;
+
+    input {
+        background: $lavanda1;
+        border: none;
+        border-radius: .4rem;
+        color: $casiBlanco;
+
+        @include medidas (6rem, 2rem);
+
+        &:hover {
+            background: $lavandaClaro;
+            @include transition;
+        }
+    }
+}

@@ -60,38 +60,17 @@
                     </div>
                 </nav>
             </div>
-            <!-- Button trigger modal -->
-            <button type="button" class="btn inicioDeSesion  d-none d-lg-block col-lg-1" data-bs-toggle="modal"
-                data-bs-target="#exampleModal">
-                <div class="inicioDeSesion__iconContainer ">
-                    <ion-icon name="person-outline"></ion-icon>
-                </div>
-            </button>
 
-            <!-- Modal -->
-            <div class="modal  fade modalInicioDeSesion" id="exampleModal" tabindex="-1"
-                aria-labelledby="exampleModalLabel" aria-hidden="true">
-                <div class="modal-dialog">
-                    <div class="modal-content">
-                        <div class="modal-body">
-                            <h3 class="modalInicioDeSesion__h3"> Bienvenid@s a Integramente</h3>
-                            <form action="">
-                                <div>
-                                    <label for="email">Correo electrónico</label>
-                                    <input class="modalInicioDeSesion__email" type="email" name="email" id=""
-                                        placeholder="Ingrese su correo electrónico">
-                                </div>
-                                <div>
-                                    <label for="password">Contraseña</label>
-                                    <input type="password" class="modalInicioDeSesion__password"
-                                        placeholder="Ingrese su contraseña" name="password">
-                                </div>
-                                <input class="inicioDeSesion__send" type="submit" value="Iniciar sesión">
-                            </form>
-                        </div>
+            <!-- Button trigger modal -->
+            <div class="botonSesionContainer">
+                <button type="button" class="inicioDeSesion" id="inicioDeSesion">
+                    <div class="inicioDeSesion__iconContainer ">
+                        <ion-icon name="person-outline"></ion-icon>
                     </div>
-                </div>
+                    <input id="botonNombreInicioSesion" type="button" value="Inicia sesión">
+                </button>
             </div>
+
             <!-- Acá van las redes sociales -->
             <div class="header__redes d-lg-flex d-none col-lg-1">
                 <a href="https://www.facebook.com/">
@@ -106,474 +85,78 @@
             </div>
         </div>
     </header>
+
+    <!-- Modal -->
+    <form class="formInicioSesion ocultarTarjeta" id="formInicioSesion">
+        <h2>Bienvenid@ a Integramente</h2>
+        <div class="">
+            <input type="text" id="usuarioInicioSesion" placeholder="Nombre de usuario">
+        </div>
+        <div class="">
+            <input type="email" id="emailInicioSesion" placeholder="Correo electrónico">
+        </div>
+        <div id="emailHelp">Tu privacidad esta a salvo con nosotros</div>
+        <div class="">
+            <input type="password" id="passwordInicioSesion" placeholder="Contraseña">
+        </div>
+        <button id="btnInicioSesion" type="submit" class="">Iniciar Sesión</button>
+    </form>
+
+    <!-- Modal perfil del usuario -->
+    <div class="userProfile ocultarTarjeta" id="userProfile">
+        <h3 class="profileName" id="profileName"></h3>
+        <div class="serviciosContratados" id="serviciosContratados">
+            <div class="servicioObtenido" id="servicioObtenido">
+                <h4>Nombre del servicio</h4>
+                <h5>Nombre del profesional</h5>
+            </div>
+            <div class="servicioObtenido" id="servicioObtenido">
+                <h4>Nombre del servicio</h4>
+                <h5>Nombre del profesional</h5>
+            </div>
+            <div class="servicioObtenido" id="servicioObtenido">
+                <h4>Nombre del servicio</h4>
+                <h5>Nombre del profesional</h5>
+            </div>
+            <div class="servicioObtenido" id="servicioObtenido">
+                <h4>Nombre del servicio</h4>
+                <h5>Nombre del profesional</h5>
+            </div>
+            <div class="servicioObtenido" id="servicioObtenido">
+                <h4>Nombre del servicio</h4>
+                <h5>Nombre del profesional</h5>
+            </div>
+            <div class="servicioObtenido" id="servicioObtenido">
+                <h4>Nombre del servicio</h4>
+                <h5>Nombre del profesional</h5>
+            </div>
+            <div class="servicioObtenido" id="servicioObtenido">
+                <h4>Nombre del servicio</h4>
+                <h5>Nombre del profesional</h5>
+            </div>
+        </div>
+        <div id="botonCerrarSesion" class="botonCerrarSesion">
+            <span>
+                Cerrar sesión
+            </span>
+        </div>
+    </div>
+
     <main class="mainServicios">
 
         <section class="mainServicios__cantidad">
             <h2>Según cantidad</h2>
             <div class="mainServicios__contenedor1 container-fluid">
-                <div class="row gap-3 justify-content-around m-0">
+                <div id="serviciosCantidadContainer" class="row gap-3 justify-content-around m-0">
 
-                    <!-- Button trigger modal -->
-                    <button type="button " class="btn col-lg-3 col-md-8 p-0 mainServicios__modalServicios"
-                        data-bs-toggle="modal" data-bs-target="#exampleModal1">
-                        <div class="mainServicios__div mainServicios__div--sesionIndividual ">
-                            <h3>sesión individual</h3>
-                        </div>
-                    </button>
-
-                    <div class=" modalServicio modal fade p-0" id="exampleModal1" tabindex="-1"
-                        aria-labelledby="exampleModalLabel" aria-hidden="true">
-                        <div class="modal-dialog">
-                            <div class="modal-content">
-                                <div class="modal-body p-0">
-                                    <div class="card tarjetaServicio">
-                                        <div class="tarjetaServicio__info">
-                                            <div class="card-body">
-                                                <h5 class="card-title">Sesión individual</h5>
-                                                <p class="card-text">Desde el momento 1 trabajaremos sobre tu motivo de
-                                                    consulta, con el propósito de conseguir en el menor tiempo posible,
-                                                    la mejor solución.
-                                                    La finalidad de la terapia individual es ayudarte a entender tu
-                                                    forma de comportarte, tus emociones y cómo tu forma de plantearte
-                                                    las cosas, te lleva a sentirte como te sientes y actuar como actúas.
-                                                    Esto te permite liberarte de las emociones negativas y te ayuda a
-                                                    mejorar tu
-                                                    capacidad para tomar decisiones. El resultado final, muchas veces,
-                                                    es que te sientes mejor contigo mismo.
-                                                    Antes de empezar, te proporcionaremos un test individual, para saber
-                                                    que psicólogos serán los más aptos para trabajar contigo.
-                                                </p>
-                                            </div>
-                                            <ul class=" list-group list-group-flush">
-                                                <li class="list-group-item">Ideal para: personas que tengan problemas
-                                                    individuales o consigo mismos, problemas de ansiedad, estrés,
-                                                    depresión, problemas de atención, autoestima, desconfianza,
-                                                    sexualidad, etc.
-                                                </li>
-                                            </ul>
-                                            <button type="button" class="btn">+ info</button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Button trigger modal -->
-                    <button type="button " class="btn col-lg-3 col-md-8 p-0 mainServicios__modalServicios"
-                        data-bs-toggle="modal" data-bs-target="#exampleModal2">
-                        <div class="mainServicios__div mainServicios__div--terapiaPareja">
-                            <h3>Terapia de pareja</h3>
-                        </div>
-                    </button>
-
-                    <div class=" modalServicio modal fade p-0" id="exampleModal2" tabindex="-1"
-                        aria-labelledby="exampleModalLabel" aria-hidden="true">
-                        <div class="modal-dialog">
-                            <div class="modal-content">
-                                <div class="modal-body p-0">
-                                    <div class="card tarjetaServicio">
-                                        <div class="tarjetaServicio__info">
-                                            <div class="card-body">
-                                                <h5 class="card-title">Terapia de pareja</h5>
-                                                <p class="card-text">En este tipo de terapia, nos centraremos en mejorar
-                                                    la relación y comunicación contigo y tu pareja. Esta constará con
-                                                    terapias entre ambos y terapias individuales para así poder
-                                                    fortalecer los resultados.
-                                                    Muchas veces nos encontramos que las parejas a la hora de tener un
-                                                    problema, estos se vuelven unos a los otros, con reclamos y
-                                                    reconres, cuando en realidad, son ambos contra el problema, no uno
-                                                    contra el otro. Nuestro enfoque se centra en ayudar a distinguir
-                                                    cuales son los probemas latentes más allá de los manifestados y
-                                                    poder solucionarlos.
-                                                    En este tipo de terapias, damos prioridad a los enfoques
-                                                    conginitivistas y sistémico.
-                                                </p>
-                                            </div>
-                                            <ul class=" list-group list-group-flush">
-                                                <li class="list-group-item">Ideal para: parejas con problemas en su vida
-                                                    sexual, en proceso de recuperar confianza luego de una deslealtad,
-                                                    con sentimientos de abandono, celos, problemas en la asignación de
-                                                    roles,
-                                                    aceptación y/o comunicación con el otro, discusiones constantes,
-                                                    dudas sobre si seguir o no su relación.
-                                                </li>
-                                            </ul>
-                                            <button type="button" class="btn">+ info</button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Button trigger modal -->
-                    <button type="button " class="btn col-lg-3 col-md-8 p-0 mainServicios__modalServicios"
-                        data-bs-toggle="modal" data-bs-target="#exampleModal3">
-                        <div class="mainServicios__div mainServicios__div--terapiaGrupal">
-                            <h3>Terapia grupal</h3>
-                        </div>
-                    </button>
-
-                    <div class=" modalServicio modal fade p-0" id="exampleModal3" tabindex="-1"
-                        aria-labelledby="exampleModalLabel" aria-hidden="true">
-                        <div class="modal-dialog">
-                            <div class="modal-content">
-                                <div class="modal-body p-0">
-                                    <div class="card tarjetaServicio">
-                                        <div class="tarjetaServicio__info">
-                                            <div class="card-body">
-                                                <h5 class="card-title">Terapia grupal</h5>
-                                                <p class="card-text">Aquí, no estarás solo, en este tipo de encuentros,
-                                                    el profesional psicólogo reunirá a una cantidad máxima de 10
-                                                    personas con problemas similares a los tuyos, este es un ambiente
-                                                    protegido donde antes de empezar el tratamiento a cada uno de los
-                                                    pacientes se les hará firmar un contrato de confidencialidad para
-                                                    asegurarnos de que todo lo que se trate en este medio quede allí
-                                                    mismo.
-                                                    En las terapias grupales se descubren características que no
-                                                    conocíamos de nosotros mismos al tener retroalimentación del resto
-                                                    del grupo, con la ventaja de poder escuchar otros casos similares y
-                                                    tomarlas en nuestro beneficio. Quiere decir que todos los
-                                                    participantes nos enriquecemos unos a otros y el beneficio es
-                                                    múltiple.
-                                                    A través de la participación activa, también nos sirve para darnos
-                                                    cuenta de ciertas actitudes que a veces tenemos y no somos
-                                                    conscientes.
-                                                    Y en la participación a través de la escucha y observación, podemos
-                                                    aprender y tomar herramientas para solucionar nuestra problemática.
-                                                    La terapia de grupo es una manera de complementar tu terapia
-                                                    individual si ya te encuentras en ese proceso terapéutico.
-                                                    Este tipo de ambientes te ayudarán a contar tu historia sin sentirte
-                                                    juzgado/a, pudiendote identificar con tus compañeros y teniendo la
-                                                    guia de un profesional.
-                                                </p>
-                                            </div>
-                                            <ul class=" list-group list-group-flush">
-                                                <li class="list-group-item">Ideal para: fobias, ansiedad, estrés post
-                                                    traumático, problemas de autoestima, resolución de problemas,
-                                                    trastosnos de la alimentación, enfermedades términales.
-                                                </li>
-                                            </ul>
-                                            <button type="button" class="btn">+ info</button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
                 </div>
             </div>
         </section>
         <section class="mainServicios__especialidad">
             <h2>Según especialidad</h2>
             <div class="mainServicios__contenedor2 container-fluid">
-                <div class="row gap-3 justify-content-around m-0">
+                <div id="serviciosEspecialidadContainer" class="row gap-3 justify-content-around m-0">
 
-                    <!-- Button trigger modal -->
-                    <button type="button " class="btn col-lg-3 col-md-8 p-0 mainServicios__modalServicios"
-                        data-bs-toggle="modal" data-bs-target="#exampleModal4">
-                        <div class="mainServicios__div mainServicios__div--terapiaSistemica">
-                            <h3>Terapia sistémica</h3>
-                        </div>
-                    </button>
-
-                    <div class=" modalServicio modal fade p-0" id="exampleModal4" tabindex="-1"
-                        aria-labelledby="exampleModalLabel" aria-hidden="true">
-                        <div class="modal-dialog">
-                            <div class="modal-content">
-                                <div class="modal-body p-0">
-                                    <div class="card tarjetaServicio">
-                                        <div class="tarjetaServicio__info">
-                                            <div class="card-body">
-                                                <h5 class="card-title">Terapia sistémica</h5>
-                                                <p class="card-text">
-                                                    <p> Desde este enfoque, se nos es imposible definir al
-                                                        individuo como aislado de su contexto, al contrario: creemos que
-                                                        cada persona esta inmerso en un sistema que lo retroalimenta y
-                                                        viceversa.</p>
-                                                    <p>"Un sistema es un grupo con entidad propia, por encima de la
-                                                        cantidad de miembros que lo conforman, que por la interacción de
-                                                        sus
-                                                        individuos afecta a su conducta."</p>
-
-                                                    <p>Basándonos de este concepto, el individuo, como parte integrante
-                                                        del
-                                                        sistema, acaba actuando en función de lo que le rodea. La
-                                                        Terapia
-                                                        Sistémica buscará identificar y diagnosticar las relaciones que
-                                                        existen dentro del sistema, para poder comprender la conducta
-                                                        individual.</p>
-
-                                                    <p> En conclusión, la Terapia sistémica es una rama de la psicología
-                                                        que
-                                                        no trata al individuo de forma aislada, ya que considera que
-                                                        nuestra
-                                                        manera de ser depende de lo que aprendemos en los sistemas en
-                                                        los
-                                                        que interactuamos.</p>
-                                                </p>
-                                            </div>
-                                            <ul class=" list-group list-group-flush">
-                                                <li class="list-group-item">Ideal para: problemas familiares, laborales,
-                                                    o incluso individuales que puedan considerarse derivados del
-                                                    contexto o relaciones del paciente, tales como: ansiedad, depresión,
-                                                    estrés, etc.
-                                                </li>
-                                            </ul>
-                                            <button type="button" class="btn">+ info</button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Button trigger modal -->
-                    <button type="button " class="btn col-lg-3 col-md-8 p-0 mainServicios__modalServicios"
-                        data-bs-toggle="modal" data-bs-target="#exampleModal5">
-                        <div class="mainServicios__div mainServicios__div--neuropsicologia ">
-                            <h3>Neuropsicología</h3>
-                        </div>
-                    </button>
-
-                    <div class=" modalServicio modal fade p-0" id="exampleModal5" tabindex="-1"
-                        aria-labelledby="exampleModalLabel" aria-hidden="true">
-                        <div class="modal-dialog">
-                            <div class="modal-content">
-                                <div class="modal-body p-0">
-                                    <div class="card tarjetaServicio">
-                                        <div class="tarjetaServicio__info">
-                                            <div class="card-body">
-                                                <h5 class="card-title">Neuro psicología</h5>
-                                                <p class="card-text">
-                                                    <p> Los especialistas en neuropsicología trabajan sobre pacientes
-                                                        con daño cerebral con el objetivo de poder mejorar su calidad de
-                                                        vida mejorando u optimizando sus habilidades cognitivas.</p>
-                                                    <p>Aquí, se habilitará terapia tanto online como presencial, ya que
-                                                        consideramos que este tipo de convalecencias no deben reducirse
-                                                        a un tratamiento via online, sino que es muy requerida la
-                                                        presencia de un neuropsicólogo espacializado</p>
-
-                                                    <p>*Se realizará un sobrecargo por cada vez que el psicólogo crea
-                                                        conveniente realizar una sesión presencial con su paciente.*</p>
-
-                                                    <p> *en este tipo de terpia requeriremos evaluaciones neurológicas
-                                                        que deberás realizarte en un hospital a elección de manera
-                                                        presencial*</p>
-                                                </p>
-                                            </div>
-                                            <ul class=" list-group list-group-flush">
-                                                <li class="list-group-item">Ideal para: personas con daño cerebral ya
-                                                    sea por un accidente o de nacimiento. Personas con enfermedades
-                                                    degenerativas (parkinson, alzheimer,huntington, esclerosis
-                                                    múltiple), trastorno del espectro autista, deficit de atención,
-                                                    hiperactividad, personas con condiciones médicas que afecten el
-                                                    funcionamiento del sistema nervioso central, problemas de memoria,
-                                                    atención o lenguaje que limiten el funcionamiento.
-                                                </li>
-                                            </ul>
-                                            <button type="button" class="btn">+ info</button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Button trigger modal -->
-                    <button type="button " class="btn col-lg-3 col-md-8 p-0 mainServicios__modalServicios"
-                        data-bs-toggle="modal" data-bs-target="#exampleModal6">
-                        <div class="mainServicios__div mainServicios__div--TerapiaCC">
-                            <h3>Terapia cognitivo conductual</h3>
-                        </div>
-                    </button>
-
-                    <div class=" modalServicio modal fade p-0" id="exampleModal6" tabindex="-1"
-                        aria-labelledby="exampleModalLabel" aria-hidden="true">
-                        <div class="modal-dialog">
-                            <div class="modal-content">
-                                <div class="modal-body p-0">
-                                    <div class="card tarjetaServicio">
-                                        <div class="tarjetaServicio__info">
-                                            <div class="card-body">
-                                                <h5 class="card-title">TCC</h5>
-                                                <p class="card-text">
-                                                    <p> La terapia conductista cognitiva es un tratamiento psicológico
-                                                        de corta duración que permite resolver problemas específicos y
-                                                        concretos como las fobias, las crisis de angustia o los
-                                                        problemas de alimentación. La base está en el aprendizaje y el
-                                                        acompañamiento profesional que provee un psicólogo. </p>
-                                                    <p>El terapeuta o psicólogo online querrá saber por qué acudiste a
-                                                        la terapia. Será tu oportunidad para que le digas lo que esperas
-                                                        ganar con ella y con esto, se plantearán objetivos. Lo que se
-                                                        quiere con la TCC es que al final del tratamiento que pude
-                                                        extenderse por medio año, lo que dependerá de tu evolución, seas
-                                                        capaz de seguir adelante solo con pensamientos y comportamientos
-                                                        positivos.</p>
-                                            </div>
-                                            <ul class=" list-group list-group-flush">
-                                                <li class="list-group-item">Ideal para: casos de pánico, fobias, crisis
-                                                    de ansiedad/angustia, estrés, trastorno obsesivo compulsivo (TOC),
-                                                    problemas de comportamiento, requerimiento de formación de hábitos,
-                                                    trastorno de estrés post traumático, problemas de ira, problemas
-                                                    para dormir.
-                                                </li>
-                                            </ul>
-
-                                            <button type="button" class="btn">+ info</button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Button trigger modal -->
-                    <button type="button " class="btn col-lg-3 col-md-8 p-0 mainServicios__modalServicios"
-                        data-bs-toggle="modal" data-bs-target="#exampleModal7">
-                        <div class="mainServicios__div mainServicios__div--TerapiaExistencialHumanista ">
-                            <h3>Terapia existencial humanista</h3>
-                        </div>
-                    </button>
-
-                    <div class=" modalServicio modal fade p-0" id="exampleModal7" tabindex="-1"
-                        aria-labelledby="exampleModalLabel" aria-hidden="true">
-                        <div class="modal-dialog">
-                            <div class="modal-content">
-                                <div class="modal-body p-0">
-                                    <div class="card tarjetaServicio">
-                                        <div class="tarjetaServicio__info">
-                                            <div class="card-body">
-                                                <h5 class="card-title">Terapia existencial humanista</h5>
-                                                <p class="card-text">
-                                                    <p> La Terapia Existencial es un enfoque en constante evolución que
-                                                        se inspira en las filosofías existenciales. Su metodología es
-                                                        fundamentalmente descriptiva y colaborativa inscribiéndose en
-                                                        los modelos relacionales e intersubjetivos.
-                                                    </p>
-                                                    <p> Mira los problemas o asuntos que provocan estrés o angustia como
-                                                        la consecuencia de las dificultades encontradas por el hecho de
-                                                        vivir como ser-en-el-mundo y no como indicadores de enfermedad o
-                                                        trastorno mental.</p>
-
-                                                    <p>No es un enfoque "reparador" ni aleccionador hacia una "mejor
-                                                        forma de vida", más bien propone un diálogo honesto para
-                                                        acercarnos a la comprensión del misterio que habitamos en
-                                                        nuestra existencia</p>
-                                                </p>
-                                            </div>
-                                            <ul class=" list-group list-group-flush">
-                                                <li class="list-group-item">Ideal para: personas con enfermedades
-                                                    graves, crónicas y/o terminales, crisis existenciales, crisis
-                                                    vitales, duelos, recuperación de adicciones. Depresiones, angustia,
-                                                    ansiedad, auto-comprensión, autoestima.
-                                                </li>
-                                            </ul>
-
-                                            <button type="button" class="btn">+ info</button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Button trigger modal -->
-                    <button type="button " class="btn col-lg-3 col-md-8 p-0 mainServicios__modalServicios"
-                        data-bs-toggle="modal" data-bs-target="#exampleModal8">
-                        <div class="mainServicios__div mainServicios__div--TerapiaGestaltica">
-                            <h3>Terapia gestáltica</h3>
-                        </div>
-                    </button>
-
-                    <div class=" modalServicio modal fade p-0" id="exampleModal8" tabindex="-1"
-                        aria-labelledby="exampleModalLabel" aria-hidden="true">
-                        <div class="modal-dialog">
-                            <div class="modal-content">
-                                <div class="modal-body p-0">
-                                    <div class="card tarjetaServicio">
-                                        <div class="tarjetaServicio__info">
-                                            <div class="card-body">
-                                                <h5 class="card-title">Terapia gestáltica</h5>
-                                                <p class="card-text">
-                                                    <p> La Terapia Gestalt es una terapia psicológica de la rama
-                                                        humanista que busca desarrollar el potencial humano y el
-                                                        crecimiento personal. Se trata de una forma de psicoterapia
-                                                        utilizada para tratar diversos trastornos psicológicos y
-                                                        emocionales, la cual nos acerca a conceptos como la toma de
-                                                        conciencia, la autorrealización, el desarrollo personal y la
-                                                        autoestima.</p>
-                                                    <p>Esta terapia procura integrar las conductas, sentimientos y
-                                                        pensamientos del paciente, de manera que sus intenciones y
-                                                        acciones estén enfocadas en conseguir una salud mental óptima.
-                                                        El psicólogo ayudará al paciente a que sea más consciente de sí
-                                                        mismo, a pensar más en el presente y a asumir más
-                                                        responsabilidades en el cuidado de su vida.</p>
-                                                </p>
-                                            </div>
-                                            <ul class=" list-group list-group-flush">
-                                                <li class="list-group-item">Ideal para: Casos de dependencia emocional,
-                                                    angustia, adicciones, crisis vitales, desorientación laboral.
-                                                </li>
-                                            </ul>
-                                            <button type="button" class="btn">+ info</button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Button trigger modal -->
-                    <button type="button " class="btn col-lg-3 col-md-8 p-0 mainServicios__modalServicios"
-                        data-bs-toggle="modal" data-bs-target="#exampleModal9">
-                        <div class="mainServicios__div mainServicios__div--TerapiaInfantoJuvenil">
-                            <h3>Terapia infanto juvenil</h3>
-                        </div>
-                    </button>
-
-                    <div class=" modalServicio modal fade p-0" id="exampleModal9" tabindex="-1"
-                        aria-labelledby="exampleModalLabel" aria-hidden="true">
-                        <div class="modal-dialog">
-                            <div class="modal-content">
-                                <div class="modal-body p-0">
-                                    <div class="card tarjetaServicio">
-                                        <div class="tarjetaServicio__info">
-                                            <div class="card-body">
-                                                <h5 class="card-title">Infanto juvenil</h5>
-                                                <p class="card-text">
-                                                    <p> La infancia y la adolescencia es un momento especialmente
-                                                        importante en el desarrollo humano y puede comportar la
-                                                        aparición de un conjunto de alteraciones que son exclusivos de
-                                                        esta edad y que requieren ayuda profesional.</p>
-                                                    <p>Los problemas que se abordan en sesión con el psicólogo online,
-                                                        tienen relación con dificultades que está presentando el niño,
-                                                        niña o jove, así como alguna dificultad que esté presenciando la
-                                                        madre o el padre (en su rol parental) respecto al hijo o hija.
-                                                    </p>
-
-                                                    <p>En la modalidad online, trabajamos con los niños y adultos. Así
-                                                        mismo, evaluaciones psicológicas del niño o adolescente,
-                                                        psicoterapia a ellos e intervención online.</p>
-
-                                                </p>
-                                            </div>
-                                            <ul class=" list-group list-group-flush">
-                                                <li class="list-group-item">Ideal para: problemáticas
-                                                    padre/madre-hijo/a, problemas de comportamiento, estrés, ansiedad o
-                                                    angustia en niños, casos de tensión familiar, problemas sociales,
-                                                    problemas de sueño, sexualidad, dificultades escolares.
-                                                </li>
-                                            </ul>
-                                            <button type="button" class="btn">+ info</button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
                 </div>
             </div>
         </section>
@@ -634,6 +217,9 @@
             </div>
         </div>
     </footer>
+    <script src="../JS/JQuery.js"></script>
+    <script src="../JS/elements.js"></script>
+    <script src="../JS/main.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous">
     </script>
